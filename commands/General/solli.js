@@ -7,7 +7,7 @@ class solli extends Command {
 		super(client, {
 			name: "sollicitatie",
 			dirname: __dirname,
-			enabled: true,
+			enabled: false,
 			guildOnly: false,
 			aliases: [ "solli" ],
 			memberPermissions: [],

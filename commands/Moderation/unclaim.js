@@ -5,7 +5,7 @@ class claim extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "claim",
+			name: "unclaim",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: false,
@@ -28,15 +28,12 @@ class claim extends Command {
         if (message.channel.parentID == categoryID) {
     
         const embed = new Discord.MessageEmbed()
-        .setTitle('Claim')
-        .setDescription(`${message.author} Heeft deze ticket Geclaimed`)
-        .setThumbnail('')
-        .setImage('')
-        .setTimestamp()
-        .setFooter('claim', '')
+        .setTitle('Unclaim')
+        .setDescription(`${message.author} Heeft deze ticket Geunclaimed`)
+        .setFooter('unclaim')
         .setColor(data.config.embed.color);
         
-        message.channel.setTopic(`${message.author}: Heeft deze ticket geclaimed`)    
+        message.channel.setTopic(`Deze ticket is niet geclaimed `)    
     
     return message.channel.send(embed);
     
