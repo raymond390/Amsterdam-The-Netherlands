@@ -1,0 +1,12 @@
+{
+    "DESCRIPTION": "Vind het juiste nummer!",
+    "USAGE": "{{prefix}}number",
+    "EXAMPLES": "{{prefix}}number",
+    "GAME_START": "Nummer gekozen, u kunt beginnen!",
+    "BIG": "{{user}} | Mijn nummer is **Groter** dan `{{number}}`!",
+    "SMALL": "{{user}} | Mijn nummer is **lager** dan `{{number}}`!",
+    "WON": "{{winner}} heeft 10 credits gewonnen!",
+    "DEFEAT": "Niemand kon het nummer vinden! Het was **{{number}}**!",
+    "GAME_STATS": "🎉 | {{winner}} vond het juiste nummer! Het was __**{{number}}**__!\n\n**Stats:**\n*-* __**Tijd**__: {{time}}\n*-* __**Deelnemers**__: {{participants}} ({{participantCount}})",
+    "GAME_RUNNING": "Er draait al een game op deze server!"
+}

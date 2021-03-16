@@ -1,0 +1,7 @@
+{
+    "DESCRIPTION": "Wis de sancties van een lid!",
+    "USAGE": "{{prefix}}clear-sanctions [@member]",
+    "EXAMPLES": "{{prefix}}clear-sanctions @Androz#2091",
+    "MISSING_MEMBER": "Geef aan van welk lid u de sancties wilt verwijderen!",
+    "SUCCESS": "**{{username}}**'s sancties zijn geschrapt!"
+}

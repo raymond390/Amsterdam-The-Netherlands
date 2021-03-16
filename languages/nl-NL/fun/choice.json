@@ -1,0 +1,9 @@
+{
+    "DESCRIPTION": "Helpt u bij het kiezen tussen de gegeven keuzes!",
+    "USAGE": "{{prefix}}choice [keuze1/keuze2/etc...]",
+    "EXAMPLES": "{{prefix}}kies Vuur/Wind/Water",
+    "MISSING": "U moet meer dan twee keuzes invoeren!\n(of gebruik in plaats daarvan het `flip` commando)",
+    "EMPTY": "Een van uw keuzes lijkt leeg te zijn... Probeer het opnieuw!",
+    "PROGRESS": "Keuze gemaakt...",
+    "DONE": "Hier is mijn keuze:"
+}

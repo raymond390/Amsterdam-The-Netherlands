@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "Genereert een \"love\" afbeelding  ",
+    "USAGE": "{{prefix}}love [@member1] (@member2)",
+    "EXAMPLES": "{{prefix}}love Androz#2091\n{{prefix}}love Raymond#1362 @Will Raymond#1362"
+}

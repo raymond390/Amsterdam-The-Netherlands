@@ -1,0 +1,13 @@
+{
+    "DESCRIPTION": "Start een Findwords-feest, een spel waarin je woorden moet vinden!",
+    "USAGE": "{{prefix}}findwords",
+    "EXAMPLES": "{{prefix}}findwords",
+    "INVALID_WORD": "{{member}} | Uw woord is niet geldig!",
+    "GAME_STARTING": ":timer: | Het spel begint over 10 seconden!",
+    "FIND_WORD": "20 seconden om een ​​woord te vinden met \"__**{{word}}**__\"!",
+    "WORD_FOUND": "Goed gedaan {{winner}}! U was de snelste om een ​​geldig woord in te voeren!",
+    "GAME_STATS": "🎉 | {{winner}} won het spel!\n\n**Stats:**\n*-* __**Duration**__: {{time}}\n*-* __**Participants**__: {{participants}} ({{participantCount}})**Stats of the game: **\n__**Duration**__: {{duration}}\n__**Number of participants**__ : {{participantCount}}\n__**Participants**__ : \n{{participantList}}",
+    "CREDITS": "{{winner}} wint 15 credits! 🎉",
+    "NO_WINNER_ALL": "Geen woorden gevonden, niemand wint!",
+    "NO_WINNER": "Geen woorden gevonden, niemand wint!"
+}

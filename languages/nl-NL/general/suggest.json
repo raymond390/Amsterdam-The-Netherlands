@@ -1,0 +1,9 @@
+{
+    "DESCRIPTION": "Stuur uw suggestie naar het gedefinieerde kanaal!",
+    "USAGE": "{{prefix}}suggest [message]",
+    "EXAMPLES": "{{prefix}}suggest Nieuw kanaal #offtopic alstublieft",
+    "MISSING_CHANNEL": "Geen suggestiekanaal gedefinieerd!",
+    "MISSING_CONTENT": "Voer een suggestie in!",
+    "TITLE": "Suggestie - {{user}}",
+    "SUCCESS": "Je suggestie wordt gestemd in {{channel}}!"
+}

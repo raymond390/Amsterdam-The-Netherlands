@@ -1,0 +1,16 @@
+{
+    "DESCRIPTION": "Schakel welkoms berichten in/uit!",
+    "USAGE": "{{prefix}}welcome",
+    "EXAMPLES": "{{prefix}}welcome",
+    "MISSING_STATUS": "U moet een actie specificeren tussen `bewerk` en` uit`",
+    "DEFAULT_MESSAGE": "Welkom {user} in {server}, We hebben nu {membercount} leden! Jouw account is gemaakt op {createdat}.",
+    "TEST_SUCCESS": "Test uitgevoerd!",
+    "FORM_1": "**Op welk kanaal worden welkomstberichten verzonden?**\n\n:arrow_right_hook: *Beantwoord door een kanaal te noemen!*",
+    "FORM_2": "**Voer uw gewenste welkomstbericht in.**\n\n**Als je wilt:**\n*-* __Mention the user__: {user}\n*-* __Get the member count__: {membercount}\n*-* __Get the server name__: {server}\n\n**Gebruiksvoorbeeld:**\nWelcome to {server}, {user}! We are now {membercount}!\n:fast_forward:\nWelcome to {{guildName}}, {{author}}! We are now {{memberCount}}!",
+    "FORM_3": "**Do you want a great welcome image too?**\n\n:arrow_right_hook: *Answer by sending `yes` or `no`!*",
+    "FORM_SUCCESS": "**Oké, klaar!**\n\n:arrow_right_hook: *Answer by sending `{{prefix}}welcome test` om een ​​voorbeeld van uw aangepaste welkomstbericht te bekijken!*",
+    "DISABLED": "**Afscheidsberichten zijn zojuist uitgeschakeld!**\n\n:arrow_right_hook: *Answer by sending `{{prefix}}configuration` om de bijgewerkte serverconfiguratie te zien! *",
+    "IMG_WELCOME": "Welkom bij {{server}}!",
+    "IMG_NB": "- {{memberCount}} leden!",
+    "TITLE": "WELKOM"
+}

@@ -1,0 +1,11 @@
+{
+    "DESCRIPTION": "Claim je salaris!",
+    "USAGE": "{{prefix}}work",
+    "EXAMPLES": "{{prefix}}work",
+    "COOLDOWN": "Je moet {{time}} wachten voordat u weer aan het werk gaat!",
+    "AWARD": "als je de streak vol houd krijg je 50 bonus punten",
+    "SALARY": "Salaris",
+    "SALARY_CONTENT": "Je hebt gewonnen {{won}} credits!",
+    "STREAK": "Streak",
+    "STREAK_CONTENT": "🎉 Je hebt 50 bonuscredits gewonnen!"
+}

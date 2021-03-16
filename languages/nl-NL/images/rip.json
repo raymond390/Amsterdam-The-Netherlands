@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "Genereert een \"rip\" afbeelding ",
+    "USAGE": "{{prefix}}rip (@member)",
+    "EXAMPLES": "{{prefix}}rip\n{{prefix}}rip @Raymond#1362"
+}

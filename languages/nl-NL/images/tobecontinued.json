@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "Genereert een \"tobecontinued\" afbeelding ",
+    "USAGE": "{{prefix}}tobecontinued (@member)",
+    "EXAMPLES": "{{prefix}}tobecontinued\n{{prefix}}tobecontinued Raymond#1362"
+}

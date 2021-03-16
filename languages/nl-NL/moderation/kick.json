@@ -1,0 +1,10 @@
+{
+    "DESCRIPTION": "Kick de genoemde member!",
+    "USAGE": "{{prefix}}kick [@member] (reason)",
+    "EXAMPLES": "{{prefix}}kick @Androz#2091 Spam",
+    "MISSING_MEMBER": "Geef een geldig lid op om te kicken!",
+    "MISSING_PERM": "Er is een fout opgetreden ... Controleer of ik de toestemming heb om dit specifieke lid te schoppen en probeer het opnieuw!",
+    "KICKED_DM": "Hallo {{username}},\nJe bent gekickt van **{{server}}** door **{{moderator}}** Reden: **{{reason}}**!",
+    "KICKED": "**{{username}}**is zojuist Gekickt uit**{{server}}** door **{{moderator}}** Reden: **{{reason}}**!",
+    "CASE": "Kick | Case #{{count}}"
+}

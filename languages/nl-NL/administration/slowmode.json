@@ -1,0 +1,8 @@
+{
+    "DESCRIPTION": "Set a channel cooldown",
+    "USAGE": "{{prefix}}slowmode [#channel] (time)",
+    "EXAMPLES": "{{prefix}}slowmode #general 10m\n{{prefix}}slowmode #general",
+    "DISABLED": "**De langzame modus is zojuist uitgeschakeld in {{channel}}!**\n\n:arrow_right_hook: *Stuur `{{prefix}}slowmode [#channel] (time)` om het weer aan tezetten!!*",
+    "ENABLED": "**Een langzame modus van `{{time}}` is zojuist ingeschakeld in `{{channel}}`!**\n\n:arrow_right_hook: *Stuur `{{prefix}}slowmode {{channel}}` om het uit tezetten!*",
+    "PLEASE_WAIT": "Channel {{channel}} is in langzame modus! Even geduld aub {{time}} tussen elk bericht!"
+}

@@ -1,0 +1,9 @@
+{
+    "DESCRIPTION": "Voorkomt dat een lid gedurende een bepaalde periode berichten verzendt en verbinding maakt met een voicechatroom!",
+    "USAGE": "{{prefix}}mute [@member] [time]",
+    "EXAMPLES": "{{prefix}}mute @Androz#2091 Spam",
+    "MISSING_MEMBER": "Geef een geldig lid op om te dempen!",
+    "MUTED_DM": "Hello {{username}},\nJe bent zojuist gedempt op **{{server}}** door **{{moderator}}** voor **{{time}}** reden **{{reason}}**!",
+    "MUTED": "**{{username}}** is gemuted voor **{{time}}** reden: **{{reason}}**!",
+    "CASE": "Mute | Case #{{count}}"
+}

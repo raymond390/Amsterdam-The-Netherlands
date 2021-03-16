@@ -1,0 +1,11 @@
+{
+    "DESCRIPTION": "Stel de verjaardagsdatum in die op uw profiel wordt weergegeven",
+    "USAGE": "{{prefix}}birthdate (datum)",
+    "EXAMPLES": "{{prefix}}birthdate 01/12/2000",
+    "MISSING_DATE": "Gelieve een correcte datum in te voeren! Bijvoorbeeld 01/12/2000",
+    "INVALID_DATE": "U moet de volgende datumnotatie gebruiken: DD/MM/YYYY. Bijvoorbeeld, `December 1, 2000` zal zijn `01/12/2000`.",
+    "INVALID_DATE_FORMAT": "You must use the following date format: DD/MM/YYYY. For example, `December 1, 2000` will be `01/12/2000`.",
+    "DATE_TOO_HIGH": "Meer dan 80 jaar oud? :eyes:",
+    "DATE_TOO_LOW": "Humm, nee! Je moet geboren zijn!",
+    "SUCCESS": "Je verjaardag is ingesteld op {{date}}!"
+}

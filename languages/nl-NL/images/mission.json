@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "Genereert een \"missie\" afbeelding  ",
+    "USAGE": "{{prefix}}mission (@member)",
+    "EXAMPLES": "{{prefix}}mission\n{{prefix}}mission Raymond#1362"
+}

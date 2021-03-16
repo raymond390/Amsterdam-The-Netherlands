@@ -1,0 +1,7 @@
+{
+    "DESCRIPTION": "Schakel commando's in een kanaal",
+    "USAGE": "{{prefix}}ignore [channel]",
+    "EXAMPLES": "{{prefix}}ignore #channel",
+    "ALLOWED": "Commando's zijn nu toegestaan {{channel}}!",
+    "IGNORED": "Commando's zijn nu verboden in {{channel}}!"
+}

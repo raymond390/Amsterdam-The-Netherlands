@@ -1,0 +1,11 @@
+{
+    "DESCRIPTION": "Stuur uw bug naar het kanaal dat voor hen is gedefinieerd!",
+    "USAGE": "{{prefix}}bug  [reason]",
+    "EXAMPLES": "{{prefix}}report ",
+    "MISSING_CHANNEL": "Geen rapportkanaal gedefinieerd!",
+    "MISSING_REASON": "Voer een reden voor het rapport in! ",
+    "MISSING_USER": "Vermeld de gebruiker die u wilt rapporteren!",
+    "INVALID_USER": "Je kunt jezelf niet melden",
+    "SUCCESS": "Je melding is verzonden in {{channel}}!",
+    "TITLE": "Report - {{user}}"
+}

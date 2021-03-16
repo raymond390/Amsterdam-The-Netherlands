@@ -1,0 +1,7 @@
+{
+    "DESCRIPTION": "Toont gebruikers met de meeste credits, niveaus of reputatiepunten!",
+    "USAGE": "{{prefix}}leaderboard [rep/levels/credits]",
+    "EXAMPLES": "{{prefix}}leaderboard credits\n{{prefix}}leaderboard levels",
+    "MISSING_TYPE": "Please specificeer het leaderboard-type tussen `credits`, `level` and `rep`",
+    "MOBILE": ":confused: we hebben vastgesteld dat u een telefoon gebruikt ... hier door is het scoreboard minder goed te zien we raden u aan om op een laptop tezitten"
+}

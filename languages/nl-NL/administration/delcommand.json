@@ -1,0 +1,8 @@
+{
+    "DESCRIPTION": "Verwijder een aangepast commando!",
+    "USAGE": "{{prefix}}delcommand [name-of-the-command]",
+    "EXAMPLES": "{{prefix}}delcommand hey",
+    "MISSING_NAME": "Voer een geldige aangepaste opdrachtnaam in!",
+    "UNKNOWN_COMMAND": "The command {{commandName}} Bestaat niet!",
+    "SUCCESS": "De opdracht {{commandName}} is van de server verwijderd!"
+}

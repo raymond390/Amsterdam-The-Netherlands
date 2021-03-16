@@ -1,0 +1,7 @@
+{
+    "DESCRIPTION": "Stuur de lijst met alle filters en hun status",
+    "USAGE": "{{prefix}}filters",
+    "EXAMPLES": "{{prefix}}filters",
+    "TITLE": "**Filters**",
+    "CONTENT": "Hier is de lijst met alle filters die zijn ingeschakeld of uitgeschakeld.\nUse `{{prefix}}filter` om de status van een van hen te wijzigen."
+}

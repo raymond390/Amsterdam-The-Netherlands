@@ -1,0 +1,7 @@
+{
+    "DESCRIPTION": "Verander de server taal!",
+    "USAGE": "{{prefix}}setlang [language]",
+    "EXAMPLES": "{{prefix}}setlang french\n{{prefix}}setlang english",
+    "MISSING_LANG": "Voer een geldige taal in tussen scripties: {{list}}",
+    "SUCCESS": ":flag_nl: De taal van deze server is nu Nederlands!"
+}

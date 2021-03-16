@@ -1,0 +1,10 @@
+{
+    "DESCRIPTION": "Verwijder snel meerdere berichten!",
+    "USAGE": "{{prefix}}clear [number-of-messages] (@member)",
+    "EXAMPLES": "{{prefix}}clear 10\n{{prefix}}clear 10 Raymond#1362",
+    "MISSING_AMOUNT": "U moet een aantal berichten specificeren om te verwijderen!",
+    "ALL_CONFIRM": "Alle kanaalberichten worden verwijderd! Om te bevestigen typ `-confirm`",
+    "CHANNEL_CLEARED": "Kanaal gewist!",
+    "CLEARED": "**{{amount}}** aantal berichten verwijderd!",
+    "CLEARED_MEMBER": "**{{amount}}** berichten van **{{username}}** Zijn verandert!"
+}

@@ -1,0 +1,12 @@
+{
+    "DESCRIPTION": "Definieer de sancties die leden krijgen na een bepaald aantal waarschuwingen!",
+    "USAGE": "{{prefix}}setwarns [kick/ban] [number/reset]",
+    "EXAMPLES": "{{prefix}setwarns kick 10\n{{prefix}}setwarns ban 10\n{{prefix}}setwarns ban reset",
+    "MISSING_TYPE": "Geef een sanctie op tussen `kick` and `ban`",
+    "SUCCESS_KICK": "** `{{count}}`waarschuwingen leiden tot uitzetting!**\n\n:arrow_right_hook: *Send `{{prefix}}configuration` om de bijgewerkte configuratie te zien!*",
+    "SUCCESS_BAN": "** `{{count}}` waarschuwingen resulteren in een ban!**\n\n:arrow_right_hook: *Send `{{prefix}}configuration` om de bijgewerkte configuratie te zien!*",
+    "SUCCESS_KICK_RESET": "**Leden kunnen niet langer automatisch worden Gekickt!**\n\n:arrow_right_hook: *Send `{{prefix}}configuration` om de bijgewerkte configuratie te zien!*",
+    "SUCCESS_BAN_RESET": "**Leden kunnen niet langer automatisch worden Verbannen!**\n\n:arrow_right_hook: *Send `{{prefix}}configuration` om de bijgewerkte configuratie te zien!*",
+    "AUTO_BAN": "**{{username}}** werd automatisch verbannen omdat ze meer dan **{{count}}** keer zijn gewaarschuwd!",
+    "AUTO_KICK": "**{{username}}** werd automatisch gekickt omdat ze meer dan **{{count}}** keer zijn gewaarschuwd!"
+}

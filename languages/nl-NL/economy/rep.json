@@ -1,0 +1,10 @@
+{
+    "DESCRIPTION": "Geef iemand een reputatiepunt!",
+    "USAGE": "{{prefix}}rep [user]",
+    "EXAMPLES": "{{prefix}}rep @Androz#2091",
+    "COOLDOWN": "Je moet wachten {{time}} wachten voordat je het kunt `rep` iemand!",
+    "INVALID_USER": "U moet een geldige gebruiker vermelden!",
+    "BOT_USER": "Bots accepteren geen reputatiepunten!",
+    "YOURSELF": "Je kunt jezelf geen reputatiepunt geven!",
+    "SUCCESS": "Je hebt zojuist een reputatiepunt gegeven aan {{username}}!"
+}

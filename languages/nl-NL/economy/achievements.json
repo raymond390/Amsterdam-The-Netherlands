@@ -1,0 +1,14 @@
+{
+    "DESCRIPTION": "Toont uw Achievements!",
+    "USAGE": "{{prefix}}achievements",
+    "EXAMPLES": "{{prefix}}achievements",
+    "SEND_CMD": "Stuur je eerste commando!",
+    "CLAIM_SALARY": "Claim je salaris 10 keer!",
+    "MARRY": "Vind je helft en trouw!",
+    "SLOTS": "Win 3 keer op rij in slots!",
+    "TIP": "Houd Atlanta in leven door een fooi te geven!",
+    "REP": "Bereik 20 reputatiepunten!",
+    "INVITE": "Nodig Atlanta uit op je server!",
+    "TITLE": "🔥 Prestaties",
+    "PROGRESS": "Voortgang: {{now}}/{{total}} ({{percent}}%)"
+}

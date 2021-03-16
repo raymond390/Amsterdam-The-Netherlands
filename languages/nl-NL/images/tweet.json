@@ -1,0 +1,8 @@
+{
+    "DESCRIPTION": "Genereert een \"tweet\" afbeelding ",
+    "USAGE": "{{prefix}}tweet [@twitter_username] [content]",
+    "EXAMPLES": "{{prefix}}tweet @ElonMusk Hello",
+    "MISSING_USERNAME": "Je moet iemands Twitter naam invoeren!",
+    "MISSING_TEXT": "Je moet de tweet-inhoud specificeren!",
+    "SUCCESS": "Nieuwe tweet door {{user}}:"
+}

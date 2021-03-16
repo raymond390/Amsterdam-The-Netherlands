@@ -1,0 +1,18 @@
+{
+    "DESCRIPTION": "Toon commands of specifieke commands.",
+    "USAGE": "{{prefix}}help (command)",
+    "EXAMPLES": "{{prefix}}help\n{{prefix}}help ping",
+    "CUSTOM": "Een aangepast commando heeft geen helppagina.",
+    "NOT_FOUND": "`{{search}}` is geen geldig command",
+    "FIELD_USAGE": "Gebruik",
+    "FIELD_DESCRIPTION": "Omschrijving",
+    "FIELD_ALIASES": "Alias",
+    "FIELD_EXAMPLES": "Voorbeelden",
+    "FIELD_PERMISSIONS": "Rechten",
+    "NO_ALIAS": "No alias",
+    "CMD_TITLE": "{{prefix}}{{cmd}} help",
+    "INFO": "● Om hulp te krijgen bij een specifiek command `{{prefix}}help <command>`!",
+    "CUSTOM_COMMANDS": "Aangepaste opdrachten",
+    "TITLE": "{{name}} | Commando's",
+    "NO_REQUIRED_PERMISSION": "Er is geen specifieke toestemming vereist om deze opdracht uit te voeren."
+}

@@ -1,0 +1,10 @@
+{
+    "DESCRIPTION": "Stuur een aankondiging in het huidige kanaal!",
+    "USAGE": "{{prefix}}announcement [text]",
+    "EXAMPLES": "{{prefix}}aankondiging Nieuw Staff member!",
+    "MISSING_TEXT": "U moet de aankondigingstekst invoeren!",
+    "TOO_LONG": "Uw tekst moet korter zijn dan 1030 tekens!",
+    "MENTION_PROMPT": "Wilt u een tagg toevoegen aan uw bericht?\nantwoord door  `ja` of `nee` testuren!",
+    "MENTION_TYPE_PROMPT": "Choose to mention `@`everyone door te typen `every` of een mention `@`here door te typen `here`!",
+    "TITLE": "📢 Aankondiging:"
+}

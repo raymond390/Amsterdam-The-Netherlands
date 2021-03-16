@@ -1,0 +1,6 @@
+{
+    "DESCRIPTION": "Controleer of leden een Discord-serverlink in hun status hebben!",
+    "USAGE": "{{prefix}}checkinvites",
+    "EXAMPLES": "{{prefix}}checkinvites",
+    "NOBODY": "Geen enkel lid adverteert in hun status!"
+}

@@ -1,0 +1,13 @@
+{
+    "DESCRIPTION": "Ban het genoemde lid!",
+    "USAGE": "{{prefix}}ban [@user] (reden)",
+    "EXAMPLES": "{{prefix}}ban Raymond#1362 Spam",
+    "MISSING_MEMBER": "Geef een geldig lid op om te verbannen!",
+    "YOURSELF": "Je kunt jezelf niet bestraffen!",
+    "SUPERIOR": "U kunt geen sanctie opleggen of actualiseren voor een lid met een hogere of gelijke rollenhiërarchie dan die van u!",
+    "ALREADY_BANNED": "**{{username}}** is al verbannen!",
+    "MISSING_PERM": "Er is een fout opgetreden ... Controleer of ik de toestemming heb om dit specifieke lid te verbannen en probeer het opnieuw!",
+    "BANNED_DM": "Hallo {{username}},\nJe bent zojuist Verbannen van **{{server}}** door **{{moderator}}** reden **{{reason}}**!",
+    "BANNED": "**{{username}}** is zojuist verbannen van **{{server}}** door **{{moderator}}** reden: **{{reason}}**!",
+    "CASE": "Ban | Case #{{count}}"
+}

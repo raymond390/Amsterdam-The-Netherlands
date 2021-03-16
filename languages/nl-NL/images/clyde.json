@@ -1,0 +1,6 @@
+{
+    "DESCRIPTION": "Genereert een \"Clyde\"afbeelding  ",
+    "USAGE": "{{prefix}}clyde [text]",
+    "EXAMPLES": "{{prefix}}clyde Discord zal op 11 december 2002 sluiten. Tot ziens.",
+    "MISSING_TEXT": "Geef de berichttekst op!"
+}

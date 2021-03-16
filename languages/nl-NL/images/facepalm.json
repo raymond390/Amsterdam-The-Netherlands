@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "Genereert een \"facepalm\" afbeelding  ",
+    "USAGE": "{{prefix}}facepalm (@member)",
+    "EXAMPLES": "{{prefix}}facepalm\n{{prefix}}facepalm Raymond#1362"
+}
