@@ -12,7 +12,7 @@ class Phcomment extends Command {
 			aliases: [],
 			memberPermissions: [],
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS", "ATTACH_FILES" ],
-			nsfw: false,
+			nsfw: true,
 			ownerOnly: false,
 			cooldown: 5000
 		});
