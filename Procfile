@@ -1,1 +1,1 @@
-Worker: node atlanta.js
+Worker: node .
