@@ -25,7 +25,7 @@ class game extends Command {
 		.setImage('')
         .setColor(data.config.embed.color)
         .setFooter(data.config.embed.footer)
-        .setDescription("https://www.roblox.com/games/6046894829/Amsterdam-The-Netherlands-V1?refPageId=6b060fe1-9e88-451c-90a3-9a1d6d32289f#!/game-instances")
+        .setDescription("https://www.roblox.com/games/5255398651/Amsterdam-The-Nederlands-V2?refPageId=4c151abc-29a8-4d63-939f-9744c1b5e2b8#")
         message.channel.send(embed);
     }
 
