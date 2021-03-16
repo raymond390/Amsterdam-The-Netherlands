@@ -87,7 +87,7 @@ message.guild.channels.create(userName.toLowerCase()+ "- sollicitatie", { type: 
             const vraag2 = new Discord.MessageEmbed()
                 .setTitle("sollicitatie vraag 3")
                 .setColor("#00BFFF")
-                .setDescription("Waarom wilt u HR worden bij Maastricht?")
+                .setDescription("Waarom wilt u HR worden bij Amsterdam?")
                 .setColor(data.config.embed.color); 
                 
             const vraag3 = new Discord.MessageEmbed()
@@ -256,7 +256,7 @@ message.guild.channels.create(userName.toLowerCase()+ "- sollicitatie", { type: 
                                      .setTitle("Bedankt voor het solliciteren")
                                      .setColor(data.config.embed.color)
                                      .setTimestamp()
-                                     .setDescription(`**Wat is je Roblox naam?**: \n${antwoord0}\n\n**Hoe oud bent u?**: \n${antwoord1}\n\n** Waarom wilt u HR worden bij Maastricht?**: \n${antwoord2}\n\n**Wat is uw motivatie? (minimaal 75 woorden)**: \n${antwoord3}\n\n**Hoeveel trainingen gaat u per week kunnen geven?**:\n${antwoord4}\n\n**Hoe gaat u de trainingen geven?**: \n${antwoord5}\n\n**heeft u al ervaring**: \n${antwoord6}\n\n**Wat is AA?**\n${antwoord7}\n\n**Wat gaat u doen als je een HR ziet abusen?**\n${antwoord8}\n\n**Wat gaat u doen als je een HC ziet abusen?**\n${antwoord9}\n\n**Wat gaat u doen als een speler met kkr scheld?**\n${antwoord10}\n\n**Wat gaat u doen als een speler met k*t scheld?**\n${antwoord11}\n\n**Gaat u luisteren als een hogere rank je aanspreekt?**\n${antwoord12}\n\n**Gaat u een hogere aanspreken?**\n${antwoord13}\n\n**Bij welk team wilt u Moderator worden?**\n${antwoord14}\n\n**Noem minimaal 3 begrippen op van uw dienst, geen Prio's.**\n${antwoord15}\n\n**Ga jij je gedragen?**\n${antwoord16}`)
+                                     .setDescription(`**Wat is je Roblox naam?**: \n${antwoord0}\n\n**Hoe oud bent u?**: \n${antwoord1}\n\n** Waarom wilt u HR worden bij Amsterdam?**: \n${antwoord2}\n\n**Wat is uw motivatie? (minimaal 75 woorden)**: \n${antwoord3}\n\n**Hoeveel trainingen gaat u per week kunnen geven?**:\n${antwoord4}\n\n**Hoe gaat u de trainingen geven?**: \n${antwoord5}\n\n**heeft u al ervaring**: \n${antwoord6}\n\n**Wat is AA?**\n${antwoord7}\n\n**Wat gaat u doen als je een HR ziet abusen?**\n${antwoord8}\n\n**Wat gaat u doen als je een HC ziet abusen?**\n${antwoord9}\n\n**Wat gaat u doen als een speler met kkr scheld?**\n${antwoord10}\n\n**Wat gaat u doen als een speler met k*t scheld?**\n${antwoord11}\n\n**Gaat u luisteren als een hogere rank je aanspreekt?**\n${antwoord12}\n\n**Gaat u een hogere aanspreken?**\n${antwoord13}\n\n**Bij welk team wilt u Moderator worden?**\n${antwoord14}\n\n**Noem minimaal 3 begrippen op van uw dienst, geen Prio's.**\n${antwoord15}\n\n**Ga jij je gedragen?**\n${antwoord16}`)
 
                                      settedParent.bulkDelete(34).then(
                                          settedParent.send(uitkomst)

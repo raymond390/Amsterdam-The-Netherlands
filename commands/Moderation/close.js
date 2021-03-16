@@ -22,7 +22,7 @@ class close extends Command {
 	async run (message, args, data) {
 	
 
-        const categoryID = "804717995569446942";
+        const categoryID = "773115115615944705";
 
         var opmerking = args.slice(0).join(" ");
 

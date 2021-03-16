@@ -1,0 +1,5 @@
+{
+"DESCRIPTION": "Maakt een ticket aan",
+"USAGE": "{{prefix}}ticket  [reden]",
+"EXAMPLES": "{{prefix}}new "
+}

@@ -16,12 +16,12 @@ module.exports = {
 		expressSessionPassword: "556611", // Express session password (it can be what you want)
 		failureURL: "https://zoetermeermusic.herokuapp.com/" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
-	mongoDB: "mongodb+srv://raymond:NKgAYS0barLYTj2U@ticket.2bhyw.mongodb.net/maastricht?retryWrites=true&w=majority", // The URl of the mongodb database
+	mongoDB: "mongodb+srv://raymond:NKgAYS0barLYTj2U@ticket.2bhyw.mongodb.net/Amsterdam?retryWrites=true&w=majority", // The URl of the mongodb database
 	prefix: "!", // The default prefix for the bot
 	/* For the embeds (embeded messages) */
 	embed: {
 		color: "#265491", // The default color for the embeds
-		footer: "Maastricht " // And the default footer for the embeds
+		footer: "Amsterdam " // And the default footer for the embeds
 	},
 	/* Bot's owner informations */
 	owner: {
@@ -61,7 +61,7 @@ module.exports = {
 			type: "LISTENING"
 		},
 		{
-			name: "Maastricht ",
+			name: "Amsterdam The Netherlands ",
 			type: "PLAYING"
 		}
 	]

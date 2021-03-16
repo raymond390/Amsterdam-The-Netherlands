@@ -22,7 +22,7 @@ class ticket extends Command {
 		
         var opmerking = args.slice(0).join(" ");
 
-        const categoryID = "804717995569446942";
+        const categoryID = "773115115615944705";
 
         var userName = message.author.username;
         var userDiscriminator = message.author.discriminator;

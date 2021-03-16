@@ -4,6 +4,6 @@
     "EXAMPLES": "{{prefix}}remindme 24h Werkopdracht\n{{prefix}}remindme 3m Take the pasta out of the pan!",
     "MISSING_MESSAGE": "U moet een bericht invoeren!",
     "SAVED": "Herinnering opgeslagen, u ontvangt aan het einde van de tijd een bericht!",
-    "TITLE": "Maastricht herinnering",
+    "TITLE": "Amsterdam herinnering",
     "CREATED": "Bericht gemaakt op {{time}}"
 }

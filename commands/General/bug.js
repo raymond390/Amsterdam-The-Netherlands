@@ -36,7 +36,7 @@ class bug extends Command {
                     .setColor("#ed0909");
         
                 // Channel voor logging
-                var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "『🤔』bugs");
+                var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "bugs");
         
                 ticketChannel.send(embedParent)
            
