@@ -39,7 +39,11 @@ class remove extends Command {
         message.channel.updateOverwrite(member.id, {'VIEW_CHANNEL': false, 'SEND_MESSAGES': false, 'MENTION_EVERYONE': false})
           message.channel.send(channelsend)
     
-        
+            
+	} else {
+		
+
+		message.channel.send("Gelieve dit command te doen bij een ticket.");
         }  
     }
 }
