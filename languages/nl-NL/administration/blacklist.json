@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "Voeg een blacklist woord toe",
+    "USAGE": "{{prefix}}blacklist [add/remove/blacklistedWords]",
+    "EXAMPLES": "{{prefix}}bl add [woord]\n{{prefix}}bl remove [woord] load 558328638911545423"
+}
