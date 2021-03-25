@@ -6,7 +6,8 @@ const Sentry = require("@sentry/node"),
 	readdir = util.promisify(fs.readdir),
 	mongoose = require("mongoose"),
 	chalk = require("chalk");
-	Discord = require('discord.js')
+  Discord = require("discord.js")
+
 const config = require("./config");
 if(config.apiKeys.sentryDSN){
 	try {
@@ -20,6 +21,9 @@ if(config.apiKeys.sentryDSN){
 // Load Atlanta class
 const Atlanta = require("./base/Atlanta"),
 	client = new Atlanta();
+
+ 
+
 
 const init = async () => {
 
@@ -65,7 +69,6 @@ const init = async () => {
 };
 
 init();
-
 
 client.on('messageDelete', message => {
     if (message.channel.type == 'text') {
@@ -187,7 +190,7 @@ const channelName = "🔒 Prive 1"
       }
     }
   })
-
+ 
 // if there are errors, log them
 client.on("disconnect", () => client.logger.log("Bot is disconnecting...", "warn"))
 	.on("reconnecting", () => client.logger.log("Bot reconnecting...", "log"))
