@@ -10,7 +10,7 @@ class vc_open extends Command {
 			enabled: true,
 			guildOnly: true,
 			aliases: [],
-			memberPermissions: [ "" ],
+			memberPermissions: [],
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
 			nsfw: false,
 			ownerOnly: false,
