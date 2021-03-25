@@ -20,7 +20,7 @@ module.exports = {
 	prefix: "!", // The default prefix for the bot
 	/* For the embeds (embeded messages) */
 	embed: {
-		color: "#265491", // The default color for the embeds
+		color: "#000000", // The default color for the embeds
 		footer: "Amsterdam " // And the default footer for the embeds
 	},
 	/* Bot's owner informations */

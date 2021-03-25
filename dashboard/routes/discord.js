@@ -8,7 +8,7 @@ const fetch = require("node-fetch"),
 // Gets login page
 router.get("/login", async function(req, res) {
 	if(!req.user || !req.user.id || !req.user.guilds){
-		return res.redirect(`https://discordapp.com/api/oauth2/authorize?client_id=${req.client.user.id}&scope=identify%20guilds&response_type=code&redirect_uri=${encodeURIComponent(req.client.config.dashboard.baseURL+"/api/callback")}&state=${req.query.state || "no"}`);
+		return res.redirect(`https://adam.thenetherlands.repl.co/`);
 	}
 	res.redirect("/selector");
 });
@@ -26,7 +26,7 @@ router.get("/callback", async (req, res) => {
 	const params = new URLSearchParams();
 	params.set("grant_type", "authorization_code");
 	params.set("code", req.query.code);
-	params.set("redirect_uri", `${req.client.config.dashboard.baseURL}/api/callback`);
+	params.set("redirect_uri", `https://adam.thenetherlands.repl.co/`);
 	let response = await fetch("https://discord.com/api/oauth2/token", {
 		method: "POST",
 		body: params.toString(),
