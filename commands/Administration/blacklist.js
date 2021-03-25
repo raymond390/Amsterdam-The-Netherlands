@@ -33,7 +33,7 @@ if(!message.member.permissions.has('ADMINISTRATOR')) return;
         const guild = { Guild: message.guild.id}
         if(command === 'add') {
             const word = args[1]?.toLowerCase();
-            if(!word) return message.channel.send('Specifiseer een word')
+            if(!word) return message.channel.send('Specifiseer een woord')
             
             Schema.findOne(guild, async (err, data) => {
                 if (data) {
