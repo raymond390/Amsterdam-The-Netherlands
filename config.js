@@ -8,7 +8,7 @@ module.exports = {
 	},
 	/* Dashboard configuration */
 	dashboard: {
-		enabled: true, // whether the dashboard is enabled or not
+		enabled: false, // whether the dashboard is enabled or not
 		secret: "2eVomESt4RCe2TrnNwxaVwZsPA-H4-d0", // Your discord client secret
 		baseURL: "https://zoetermeermusic.herokuapp.com/", // The base URl of the dashboard
 		logs: "760836476102639651XXX", // The channel ID of logs
