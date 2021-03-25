@@ -5,4 +5,4 @@ const Schema = new mongo.Schema({
     Words: Array,
 })
 
-module.exports = mongo.model("blacklisted-words", Schema);s
+module.exports = mongo.model("blacklisted-words", Schema);
