@@ -20,8 +20,7 @@ class vc_open extends Command {
 
 	async run (message, args, data) {
         
-        if (message.member.roles.cache.some(role => role.name === 'Server Booster')) {
-    
+		if (message.member.roles.cache.some(role => role.name === 'Server Booster' || 'Bot Developer')) {
         const channelsend = new Discord.MessageEmbed()
       .setColor('#e64b0e')
       .setTitle(`Kanaal Geopend`)

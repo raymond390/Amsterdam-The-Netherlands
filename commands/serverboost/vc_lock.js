@@ -1,6 +1,6 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js");
-	
+
 class vc_lock extends Command {
 
 	constructor (client) {
@@ -20,7 +20,7 @@ class vc_lock extends Command {
 
 	async run (message, args, data) {
         
-        if (message.member.roles.cache.some(role => role.name === 'Server Booster')) {
+        if (message.member.roles.cache.some(role => role.name === 'Server Booster' || 'Bot Developer')) {
     
         const channelsend = new Discord.MessageEmbed()
       .setColor('#e64b0e')

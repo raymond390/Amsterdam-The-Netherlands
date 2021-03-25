@@ -10,6 +10,7 @@ const Sentry = require("@sentry/node"),
 	Schema = require("./models/blacklist")
 const { blacklistedWords } = require("./collection");
 const config = require("./config");
+const schema = require("./models/")
 if(config.apiKeys.sentryDSN){
 	try {
 		Sentry.init({ dsn: config.apiKeys.sentryDSN });
