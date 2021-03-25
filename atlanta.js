@@ -6,7 +6,7 @@ const Sentry = require("@sentry/node"),
 	readdir = util.promisify(fs.readdir),
 	mongoose = require("mongoose"),
 	chalk = require("chalk");
-
+	Discord = require('discord.js')
 const config = require("./config");
 if(config.apiKeys.sentryDSN){
 	try {
