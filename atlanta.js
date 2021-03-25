@@ -66,6 +66,128 @@ const init = async () => {
 
 init();
 
+
+client.on('messageDelete', message => {
+    if (message.channel.type == 'text') {
+      var logger = message.member.guild.channels.cache.find(channel => channel.name === "logs");
+      if (logger) {
+		const embed = new Discord.MessageEmbed()
+          .setTitle('Bericht Verwijdert')
+          .addField('Persoon', message.author.username)
+          .addField('Bericht', message.cleanContent)
+          .addField("Locatie", message.channel)
+          .setThumbnail(message.author.avatarURL)
+          .setColor('0x00AAFF');
+        logger.send({ embed });
+      }
+    }
+  });
+
+   client.on("messageUpdate", async(oldMessage, newMessage) =>{
+	if(oldMessage.content === newMessage.content){
+		return;
+	}
+
+	const logembed = new Discord.MessageEmbed()
+	.setAuthor(oldMessage.author.tag, oldMessage.author.avatarURL)
+	.setThumbnail(oldMessage.author.avatarURL)
+	.setDescription("Een bericht is berwerkt")
+	.addField("Voor", oldMessage.content, true)
+	.addField("Na", newMessage.content, true)
+	.addField("Locatie",newMessage.channel)
+	.setTimestamp()
+	.setColor('0x00AAFF');
+
+	
+	let loggingChannel = newMessage.member.guild.channels.cache.find(channel => channel.name === "logs");
+	if(!loggingChannel) return;
+
+	loggingChannel.send(logembed)
+
+  })
+
+client.on('ready', () => {
+	var logger = client.channels.cache.get('735815032029315192');
+      if (logger) {
+		const embed = new Discord.MessageEmbed()
+          .setTitle('Systeem Herstart')
+		  .setDescription("De bot is opnieuw opgestart door de Bot\ndeveloper of automatisch\n\n zijn er problemen meld het dan bij **Raymond#1362**")
+          .setColor('#265491');
+        logger.send({ embed });
+      }
+    }
+  );
+
+const channelName = "🔒 Prive 1"
+  
+
+
+  const getVoiceChannels = (guild) => {
+	return guild.channels.cache.filter((channel) => {
+	  return channel.type === 'voice' && channel.name === channelName
+	})
+  }
+
+  client.on('voiceStateUpdate', (oldState, newState) => {
+    const { guild } = oldState
+    const joined = !!newState.channelID
+
+    const channelId = joined ? newState.channelID : oldState.channelID
+    let channel = guild.channels.cache.get(channelId)
+
+    console.log(
+      `${newState.channelID} vs ${oldState.channelID} (${channel.name})`
+    )
+
+    if (channel.name === channelName) {
+      if (joined) {
+        const channels = getVoiceChannels(guild)
+
+        let hasEmpty = false
+
+        channels.forEach((channel) => {
+          if (!hasEmpty && channel.members.size === 0) {
+            hasEmpty = true
+          }
+        })
+
+        if (!hasEmpty) {
+          const {
+            type,
+            userLimit,
+            bitrate,
+            parentID,
+            permissionOverwrites,
+            rawPosition,
+          } = channel
+
+          guild.channels.create(channelName, {
+            type,
+            bitrate,
+            userLimit,
+            parent: parentID,
+            permissionOverwrites,
+            position: rawPosition,
+          })
+        }
+      } else if (
+        channel.members.size === 0 &&
+        getVoiceChannels(guild).size > 1
+      ) {
+        channel.delete()
+      }
+    } else if (oldState.channelID) {
+      channel = guild.channels.cache.get(oldState.channelID)
+      if (
+        channel.name === channelName &&
+        channel.members.size === 0 &&
+        getVoiceChannels(guild).size > 1
+      ) {
+        channel.delete()
+      }
+    }
+  })
+
 // if there are errors, log them
 client.on("disconnect", () => client.logger.log("Bot is disconnecting...", "warn"))
 	.on("reconnecting", () => client.logger.log("Bot reconnecting...", "log"))
