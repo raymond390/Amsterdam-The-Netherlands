@@ -283,3 +283,4 @@ async function updateXp(msg, data){
 	data.memberData.exp = parseInt(newXp, 10);
 	await data.memberData.save();
 }
+
