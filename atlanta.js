@@ -23,9 +23,7 @@ if(config.apiKeys.sentryDSN){
 const Atlanta = require("./base/Atlanta"),
 	client = new Atlanta();
 
-	const keepAlive = require('./server.js')
- 
-	keepAlive();
+	
 
 const init = async () => {
 

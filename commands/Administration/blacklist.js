@@ -12,7 +12,7 @@ class ticket extends Command {
 			guildOnly: false,
 			aliases: [ "bl"],
 			memberPermissions: [],
-			botPermissions: [ "SEND_MESSAGES" ],
+			botPermissions: [ "MANAGE_GUILD" ],
 			nsfw: false,
 			ownerOnly: false,
 			cooldown: 1000
