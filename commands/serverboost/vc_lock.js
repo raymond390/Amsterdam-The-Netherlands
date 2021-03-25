@@ -1,6 +1,6 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js");
-
+	
 class vc_lock extends Command {
 
 	constructor (client) {
