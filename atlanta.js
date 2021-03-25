@@ -228,7 +228,7 @@ client.on('message', async(message) => {
 	client.on('message', (message) => { //whenever a message is sent
 		if (message.content.includes('https://'||'.com')) { //if it contains an invite link
 		  message.delete() //delete the message
-			.then(member.send('Link Gededecteerd:\n**Link zijn niet toegestaan op de server**'))
+			
 		}
 	  })
 })
