@@ -110,7 +110,7 @@ client.on('messageDelete', message => {
   })
 
   client.on('ready', () => {
-	var logger = client.channels.cache.get('821445735878623312');
+	var logger = client.channels.cache.get('735815032029315192');
       if (logger) {
 		const embed = new Discord.MessageEmbed()
           .setTitle('Systeem Herstart')
