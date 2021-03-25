@@ -6,8 +6,9 @@ const Sentry = require("@sentry/node"),
 	readdir = util.promisify(fs.readdir),
 	mongoose = require("mongoose"),
 	chalk = require("chalk");
-  Discord = require("discord.js")
-
+	Discord = require("discord.js")
+	Schema = require("./models/blacklist")
+const { blacklistedWords } = require("./collection");
 const config = require("./config");
 if(config.apiKeys.sentryDSN){
 	try {
@@ -22,8 +23,9 @@ if(config.apiKeys.sentryDSN){
 const Atlanta = require("./base/Atlanta"),
 	client = new Atlanta();
 
+	const keepAlive = require('./server.js')
  
-
+	keepAlive();
 
 const init = async () => {
 
@@ -75,10 +77,10 @@ client.on('messageDelete', message => {
       var logger = message.member.guild.channels.cache.find(channel => channel.name === "logs");
       if (logger) {
 		const embed = new Discord.MessageEmbed()
-          .setTitle('Bericht Verwijdert')
-          .addField('Persoon', message.author.username)
-          .addField('Bericht', message.cleanContent)
-          .addField("Locatie", message.channel)
+          .setTitle('Message Deleted')
+          .addField('Author', message.author.username)
+          .addField('Message', message.cleanContent)
+		  .addField("Locatie", message.channel)
           .setThumbnail(message.author.avatarURL)
           .setColor('0x00AAFF');
         logger.send({ embed });
@@ -86,7 +88,7 @@ client.on('messageDelete', message => {
     }
   });
 
-   client.on("messageUpdate", async(oldMessage, newMessage) =>{
+  client.on("messageUpdate", async(oldMessage, newMessage) =>{
 	if(oldMessage.content === newMessage.content){
 		return;
 	}
@@ -109,19 +111,27 @@ client.on('messageDelete', message => {
 
   })
 
-client.on('ready', () => {
-	var logger = client.channels.cache.get('735815032029315192');
+  client.on('ready', () => {
+	var logger = client.channels.cache.get('821445735878623312');
       if (logger) {
 		const embed = new Discord.MessageEmbed()
           .setTitle('Systeem Herstart')
-		  .setDescription("De bot is opnieuw opgestart door de Bot\ndeveloper of automatisch\n\n zijn er problemen meld het dan bij **Raymond#1362**")
-          .setColor('#265491');
+		  .setDescription("De bot is opnieuw opgestart door de Bot\n developer of automatisch\n\n zijn er problemen meld het dan bij **Raymond#1362**")
+          .setColor('0x00AAFF');
         logger.send({ embed });
       }
+      Schema.find().then((data) => {
+        data.forEach((val) => {
+          blacklistedWords.set(val.Guild, val.Words)
+        })
+      })
     }
+
   );
 
-const channelName = "🔒 Prive 1"
+
+  
+  const channelName = "🔒 Prive 1"
   
 
 
@@ -191,6 +201,33 @@ const channelName = "🔒 Prive 1"
     }
   })
  
+  client.ticketTranscript = mongoose.model('transcripts', 
+  new mongoose.Schema({
+      Channel : String,
+      Content : Array
+  })
+)
+// -------------------------------------------------
+
+client.on('message', async(message) => {
+
+      if (!message.guild || message.author.id === client.user.id) return;
+
+      const splittedMsgs = message.content.split(' ');
+    
+      let deleting = false
+    
+      await Promise.all(
+        splittedMsgs.map((content) => {
+          if(blacklistedWords.get(message.guild.id)?.includes(content)) deleting = true;
+        })
+      )
+    
+    if(deleting) return message.delete();
+ 
+
+
+})
 // if there are errors, log them
 client.on("disconnect", () => client.logger.log("Bot is disconnecting...", "warn"))
 	.on("reconnecting", () => client.logger.log("Bot reconnecting...", "log"))
