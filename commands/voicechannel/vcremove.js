@@ -45,7 +45,7 @@ class vcremove extends Command {
         message.channel.send(embed);
     
         setTimeout(function(){
-            const fetchedChannel = message.guild.channels.cache.find(r => r.name === userName.toLowerCase() + "-" + userDiscriminator);
+            const fetchedChannel = message.guild.channels.cache.find(r => r.name === userName.toLowerCase());
             
                 fetchedChannel.delete();
            

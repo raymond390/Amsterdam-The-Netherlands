@@ -29,7 +29,7 @@ class vc_open extends Command {
       var userDiscriminator = message.author.discriminator;
       var userName = message.author.username;
     
-      const fetchedChannel = message.guild.channels.cache.find(r => r.name === userName.toLowerCase() + "-" + userDiscriminator);
+      const fetchedChannel = message.guild.channels.cache.find(r => r.name === userName.toLowerCase());
             
      
     
