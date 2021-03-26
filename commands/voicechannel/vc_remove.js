@@ -1,11 +1,11 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js");
 
-class vc_add extends Command {
+class vc_remove extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "vc_add",
+			name: "vc_remove",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: false,
@@ -50,4 +50,4 @@ class vc_add extends Command {
 
 
     }
-        module.exports = vc_add;
+        module.exports = vc_remove;
