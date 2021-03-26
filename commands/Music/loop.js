@@ -1,6 +1,6 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js"),
-	
+	FiltersList = require("../../assets/json/filters.json");
 
 class loop extends Command {
 
@@ -20,15 +20,25 @@ class loop extends Command {
 	}
 
 	async run (message, args, data) {
-    const serverQueue =  this.client.player.getQueue(message);
-    
-if (!msg.member.voiceChannel) return msg.channel.send('You are not in a voice channel!');
-if(!serverQueue) return msg.channel.send('Not playing anything right now');
-if(serverQueue.voiceChannel.id !== msg.member.voiceChannel.id) return msg.channel.send(`You must be in **${serverQueue.voiceChannel.name}** to loop the queue`);
-serverQueue.loop = !serverQueue.loop;
-client.queue.set(msg.guild.id, serverQueue);
-if(serverQueue.loop) return msg.channel.send('**🔁 Repeated current queue!**');
-return msg.channel.send('**🔁 Unrepeated current queue!**');
+
+		const queue = this.client.player.getQueue(message);
+
+		const voice = message.member.voice.channel;
+		if (!voice){
+			return message.error("music/play:NO_VOICE_CHANNEL");
+		}
+
+		if(!queue){
+			return message.error("music/play:NOT_PLAYING");
+		}
+
+        this.client.player.getQueue.setRepeatMode(message, enabled);
+
+
+
+
+    }
+
 }
-}
+
 module.exports = loop;
