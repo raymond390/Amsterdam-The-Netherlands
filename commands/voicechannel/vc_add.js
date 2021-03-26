@@ -9,9 +9,9 @@ class vc_add extends Command {
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: false,
-			aliases: [ "vc_create"],
+			aliases: [ "new"],
 			memberPermissions: [],
-			botPermissions: [ "" ],
+			botPermissions: [ "SEND_MESSAGES" ],
 			nsfw: false,
 			ownerOnly: false,
 			cooldown: 1000
@@ -19,76 +19,35 @@ class vc_add extends Command {
 	}
 
 	async run (message, args, data) {
-		
-        
-          
-        var opmerking = args.slice(0).join(" ");
 
-        const categoryID = "735815712102416394";
+        var member =  await this.client.resolveMember(args[0], message.guild);
 
-        var userName = message.author.username;
+        const channelsend = new Discord.MessageEmbed()
+        .setTitle(`${member} is toegevoegd aan het kanaal`)
+        .setColor(data.config.embed.color)
+  
         var userDiscriminator = message.author.discriminator;
-    
-        var ticketBestaat = false;
-    
-        message.guild.channels.cache.forEach(channel => {
-        
-        if (channel.name == userName.toLowerCase()) {
-            ticketBestaat = true;
-
-            message.reply("Je hebt al een kanaal aangemaakt");
-
-            return;
-        }
-    });
-    
-    
-        if (ticketBestaat) return;
-    
-             const embed = new Discord.MessageEmbed()
-            .setTitle("Hoi " + message.author.username)
-            .setColor(data.config.embed.color)
-            .setFooter("Kanaal word aangemaakt  ");
-
-        message.channel.send(embed);
-    
-        message.guild.channels.create(userName.toLowerCase(), { type: 'voice' }).then(
-            (createdChannel) => {
-                createdChannel.setParent(categoryID).then(
-                    (settedParent) => {
-    
-                        settedParent.updateOverwrite(message.guild.roles.cache.find(x => x.name === '@everyone'), {
-                            CONNECT: true,
-                            VIEW_CHANNEL: true,
-                            SPEAK: true,
-                            VIDEO: true
-                        });
-
-
-
-                        setTimeout(function(){
-                            const fetchedChannel = (userName.toLowerCase());
-                            
-                                fetchedChannel.delete();
-                        
-                            
-                        }, 3600000);//wait 2 seconds
-                    }
-                ).catch(err => {
-                    message.channel.send("Er is iets misgelopen");
-                });
-            }
-        ).catch(err => {
-            message.channel.send("Er is iets misgelopen");
-        });
+        var userName = message.author.username;
       
+        const fetchedChannel = message.guild.channels.cache.find(r => r.name === userName.toLowerCase());
+              
+       
+      
+        fetchedChannel.updateOverwrite(member, {
+            SPEAK: true,
+            VIEW_CHANNEL: true,
+            CONNECT: true
+        });
+        
+  
+      
+            message.channel.send(channelsend)
+      
+              
+  
+      }
+
+
+
     }
-        }
-    
-    
-    
-
-
-
-
-module.exports = vc_add;
+        module.exports = vc_add;
