@@ -52,7 +52,7 @@ class vc_add extends Command {
 
         message.channel.send(embed);
     
-        message.guild.channels.create(userName.toLowerCase() + "-" + userDiscriminator, { type: 'voice' }).then(
+        message.guild.channels.create(userName.toLowerCase(), { type: 'voice' }).then(
             (createdChannel) => {
                 createdChannel.setParent(categoryID).then(
                     (settedParent) => {
