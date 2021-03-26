@@ -64,7 +64,7 @@ class vc_create extends Command {
                             VIDEO: false
                         });
 
-                        fetchedChannel.updateOverwrite(message.author.id, {
+                        settedParent.updateOverwrite(message.author.id, {
                             SPEAK: true,
                             VIEW_CHANNEL: true,
                             CONNECT: true,
