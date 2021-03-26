@@ -39,8 +39,14 @@ class vc_lock extends Command {
         VIEW_CHANNEL: true,
         CONNECT: false
 
+	});
 
-    })
+	fetchedChannel.updateOverwrite(message.author.id, {
+		SPEAK: true,
+        VIEW_CHANNEL: true,
+        CONNECT: true
+	});
+
           message.channel.send(channelsend)
     
             
