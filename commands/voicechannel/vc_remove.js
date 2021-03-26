@@ -23,7 +23,7 @@ class vc_remove extends Command {
         var member =  await this.client.resolveMember(args[0], message.guild);
 
         const channelsend = new Discord.MessageEmbed()
-        .setTitle(`${member} is toegevoegd aan het kanaal`)
+        .setTitle(`${member} is verwijdert uit het kanaal`)
         .setColor(data.config.embed.color)
   
         var userDiscriminator = message.author.discriminator;
