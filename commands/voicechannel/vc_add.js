@@ -20,7 +20,7 @@ class vc_add extends Command {
 
 	async run (message, args, data) {
 		
-        if (message.member.roles.cache.some(role => role.name === 'Server Booster' || 'Bot Developer')) {
+        
           
         var opmerking = args.slice(0).join(" ");
 
@@ -86,7 +86,7 @@ class vc_add extends Command {
         }
     
     
-    }
+    
 
 
 

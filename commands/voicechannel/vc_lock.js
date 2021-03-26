@@ -1,11 +1,11 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js");
 
-class vc_open extends Command {
+class vc_lock extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "vc_open",
+			name: "vc_lock",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: true,
@@ -20,10 +20,11 @@ class vc_open extends Command {
 
 	async run (message, args, data) {
         
-		if (message.member.roles.cache.some(role => role.name === 'Server Booster' || 'Bot Developer')) {
+  
+    
         const channelsend = new Discord.MessageEmbed()
       .setColor('#e64b0e')
-      .setTitle(`Kanaal Geopend`)
+      .setTitle(`Kanaal Gesloten`)
 	  .setColor(data.config.embed.color)
 
       var userDiscriminator = message.author.discriminator;
@@ -34,9 +35,10 @@ class vc_open extends Command {
      
     
       fetchedChannel.updateOverwrite(message.guild.roles.cache.find(x => x.name === '@everyone'), {
-        SPEAK: true,
+        SPEAK: false,
         VIEW_CHANNEL: true,
-        CONNECT: true
+        CONNECT: false
+
 
     })
           message.channel.send(channelsend)
@@ -45,6 +47,7 @@ class vc_open extends Command {
 
     }
 }
-}
 
-module.exports = vc_open;
+    
+
+module.exports = vc_lock;
