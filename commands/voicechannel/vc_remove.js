@@ -34,9 +34,9 @@ class vc_add extends Command {
        
       
         fetchedChannel.updateOverwrite(member, {
-            SPEAK: true,
-            VIEW_CHANNEL: true,
-            CONNECT: true
+            SPEAK: false,
+            VIEW_CHANNEL: false,
+            CONNECT: false
         });
         
   

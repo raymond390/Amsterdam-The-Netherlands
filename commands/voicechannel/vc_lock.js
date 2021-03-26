@@ -5,7 +5,7 @@ class vc_lock extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "vc_lock",
+			name: "vc_create",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: true,

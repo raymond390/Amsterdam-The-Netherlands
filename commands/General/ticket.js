@@ -9,7 +9,7 @@ class ticket extends Command {
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: false,
-			aliases: [ "new"],
+			aliases: ["new"],
 			memberPermissions: [],
 			botPermissions: [ "SEND_MESSAGES" ],
 			nsfw: false,
