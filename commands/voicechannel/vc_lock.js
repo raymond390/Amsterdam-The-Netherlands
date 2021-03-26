@@ -36,7 +36,7 @@ class vc_lock extends Command {
     
       fetchedChannel.updateOverwrite(message.guild.roles.cache.find(x => x.name === '@everyone'), {
         SPEAK: false,
-        VIEW_CHANNEL: true,
+        VIEW_CHANNEL: false,
         CONNECT: false
 
 	});
