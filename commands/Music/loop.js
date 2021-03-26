@@ -32,7 +32,7 @@ class loop extends Command {
 			return message.error("music/play:NOT_PLAYING");
 		}
 
-        this.client.player.getQueue.setRepeatMode(message, enabled);
+        this.client.player.getQueue.setRepeatMode(message);
 
 
 
