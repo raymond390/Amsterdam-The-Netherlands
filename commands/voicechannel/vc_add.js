@@ -33,7 +33,7 @@ class vc_add extends Command {
     
         message.guild.channels.cache.forEach(channel => {
         
-        if (channel.name == userName.toLowerCase() + "-" + userDiscriminator) {
+        if (channel.name == userName.toLowerCase()) {
             ticketBestaat = true;
 
             message.reply("Je hebt al een kanaal aangemaakt");
@@ -67,7 +67,7 @@ class vc_add extends Command {
 
 
                         setTimeout(function(){
-                            const fetchedChannel = (userName.toLowerCase() + "-" + userDiscriminator);
+                            const fetchedChannel = (userName.toLowerCase());
                             
                                 fetchedChannel.delete();
                         
