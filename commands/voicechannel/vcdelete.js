@@ -40,7 +40,7 @@ class vc_delete extends Command {
              const embed = new Discord.MessageEmbed()
             .setTitle("Hoi " + message.author.username)
             .setColor(data.config.embed.color)
-            .setFooter("Kanaal word verdijdert ");
+            .setFooter("Kanaal word verwijdert ");
 
         message.channel.send(embed);
     
