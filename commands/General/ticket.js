@@ -34,7 +34,7 @@ class ticket extends Command {
             if (channel.name == userName.toLowerCase() + "-" + userDiscriminator) {
                 ticketBestaat = true;
     
-                message.reply("Je hebt al een ticket aangemaakt");
+                message.reply("Je hebt al een ticket aangemaakt!");
     
                 return;
             }
