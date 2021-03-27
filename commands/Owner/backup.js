@@ -15,7 +15,7 @@ class Backup extends Command {
 			memberPermissions: [ "MANAGE_GUILD" ],
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS", "ADMINISTRATOR" ],
 			nsfw: false,
-			ownerOnly: false,
+			ownerOnly: true,
 			cooldown: 30000
 		});
 	}
