@@ -1,0 +1,8 @@
+{
+    "DESCRIPTION": "Speel vorige nummer.",
+    "USAGE": "{{prefix}}back",
+    "EXAMPLES": "{{prefix}}back",
+    "NO_PREV_SONG": "Er was geen vorig nummer.",
+    "VOTE_CONTENT": "Vorig nummer: {{songName}}\n Reageer met 👍 om vorig nummer te spelen! {{requiredCount}} meer vote's zijn nodig..",
+    "SUCCESS": "Speelt vorig nummer"
+}
