@@ -56,10 +56,10 @@ class Work extends Command {
 			this.client.customEmojis.letters.r,
 			this.client.customEmojis.letters.d
 		];
-		let won = 50;
+		let won = 80;
 
 		if(data.memberData.workStreak >= 5){
-			won += 50;
+			won += 60;
 			embed.addField(message.translate("economy/work:SALARY"), message.translate("economy/work:SALARY_CONTENT", {
 				won
 			}))
