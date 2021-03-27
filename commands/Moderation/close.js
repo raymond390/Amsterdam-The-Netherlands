@@ -21,12 +21,15 @@ class close extends Command {
 
 	async run (message, args, data) {
 	
+    const ticket1 = "825265915032633374";
+     
+     const ticket2 = "773115115615944705";
 
-        const categoryID = "773115115615944705";
+        const categoryID = ticket1;
 
         var opmerking = args.slice(0).join(" ");
 
-        if (message.channel.parentID == categoryID) {
+        if (message.channel.parentID == categoryID, ticket2) {
     
             message.channel.delete();
     
