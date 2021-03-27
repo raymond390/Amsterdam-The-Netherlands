@@ -20,12 +20,15 @@ class claim extends Command {
 
 	async run (message, args, data) {
 		
-        const categoryID = "773115115615944705";
-        var claim = message.guild.member(message.mentions.users.first());
-    
-        
-    
-        if (message.channel.parentID == categoryID) {
+        const ticket1 = "825265915032633374";
+     
+        const ticket2 = "773115115615944705";
+   
+           const categoryID = ticket1;
+   
+           
+   
+           if (message.channel.parentID == categoryID, ticket2) {
     
         const embed = new Discord.MessageEmbed()
         .setTitle('Claim')
