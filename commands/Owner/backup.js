@@ -12,7 +12,7 @@ class Backup extends Command {
 			enabled: true,
 			guildOnly: true,
 			aliases: [ "sauvegarde" ],
-			memberPermissions: [ "MANAGE_GUILD" ],
+			memberPermissions: [],
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS", "ADMINISTRATOR" ],
 			nsfw: false,
 			ownerOnly: true,
