@@ -5,7 +5,7 @@
     "COOLDOWN": "Je moet {{time}} wachten voordat u weer aan het werk gaat!",
     "AWARD": "als je de streak vol houd krijg je 50 bonus punten",
     "SALARY": "Salaris",
-    "SALARY_CONTENT": "Je hebt gewonnen {{won}} credits!",
+    "SALARY_CONTENT": "Je hebt {{won}} gerkregen!",
     "STREAK": "Streak",
-    "STREAK_CONTENT": "🎉 Je hebt 50 bonuscredits gewonnen!"
+    "STREAK_CONTENT": "🎉 Je hebt 50 bonuscredits gekregen!"
 }
