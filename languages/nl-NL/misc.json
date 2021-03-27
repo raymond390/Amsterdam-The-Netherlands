@@ -22,7 +22,7 @@
     "RESTRICTED_CHANNEL": "Opdrachten zijn niet toegestaan in {{channel}}!",
     "EVERYONE_MENTION": "Je mag niet @everyone of @here in de opdrachten vermelden.",
     "NSFW_COMMAND": "U moet deze opdracht uitvoeren in een kanaal dat NSFW toestaat!",
-    "OWNER_ONLY": "Alleen de eigenaar van GLXY kan deze opdrachten uitvoeren!",
+    "OWNER_ONLY": "Alleen de eigenaar van Amsterdam The Netherlands Bot kan deze opdrachten uitvoeren!",
     "COOLDOWNED": "Je moet **{{seconds}}** seconde(n) wachten om deze opdracht opnieuw te kunnen uitvoeren!",
     "CANNOT_DM": "Ik heb geen toestemming om u privéberichten te sturen... Werk uw privacy-instellingen bij!"
 }
