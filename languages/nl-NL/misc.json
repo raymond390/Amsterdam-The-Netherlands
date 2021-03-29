@@ -8,7 +8,7 @@
     "INVALID_TIME": "Je moet een geldige tijd invoeren! Beschikbare eenheden: `s`, `m`, `h` of `d`",
     "INVALID_NUMBER": "Geef een geldig nummer op!",
     "INVALID_NUMBER_RANGE": "Geef een geldig nummer op tussen **{{min}}** en **{{max}}**!",
-    "STATS_FOOTER": "Amsterdam",
+    "STATS_FOOTER": "[Dashboard]({{dashboardLink}})",
     "BOT_USER": "Deze gebruiker is een bot!",
     "NO_REASON_PROVIDED": "Geen reden opgegeven",
     "NO_USER_FOUND_ID": "Geen enkele gebruiker op Discord heeft de ID `{{id}}`!",
