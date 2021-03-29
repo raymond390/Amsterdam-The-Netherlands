@@ -3,18 +3,18 @@ module.exports = {
 	token: "",
 	/* For the support server */
 	support: {
-		id: "760836476102639648", // The ID of the support server
-		logs: "811274030854176779", // And the ID of the logs channel of your server (new servers for example)
+		id: "757998148969824376", // The ID of the support server
+		logs: "825434331346501682", // And the ID of the logs channel of your server (new servers for example)
 	},
 	/* Dashboard configuration */
 	dashboard: {
 		enabled: true, // whether the dashboard is enabled or not
 		secret: "u8d9Ok4hbNngSDmCnXmGmh1spmrIC3x3", // Your discord client secret
-		baseURL: "https://amsterdamnamm.herokuapp.com", // The base URl of the dashboard
-		logs: "760836476102639651", // The channel ID of logs
+		baseURL: "https://amsterdamnamm.herokuapp.com/", // The base URl of the dashboard
+		logs: "825434331346501682", // The channel ID of logs
 		port: process.env.PORT, // Dashboard port
 		expressSessionPassword: "556611", // Express session password (it can be what you want)
-		failureURL: "https://amsterdamnamm.herokuapp.com" // url on which users will be redirected if they click the cancel button (discord authentication)
+		failureURL: "https://amsterdamnamm.herokuapp.com/" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
 	mongoDB: "mongodb+srv://raymond:NKgAYS0barLYTj2U@ticket.2bhyw.mongodb.net/Amsterdam?retryWrites=true&w=majority", // The URl of the mongodb database
 	prefix: "!", // The default prefix for the bot
