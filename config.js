@@ -8,13 +8,13 @@ module.exports = {
 	},
 	/* Dashboard configuration */
 	dashboard: {
-		enabled: false, // whether the dashboard is enabled or not
+		enabled: true, // whether the dashboard is enabled or not
 		secret: "2eVomESt4RCe2TrnNwxaVwZsPA-H4-d0", // Your discord client secret
-		baseURL: "https://zoetermeermusic.herokuapp.com/", // The base URl of the dashboard
+		baseURL: "https://amsterdamnamm.herokuapp.com/", // The base URl of the dashboard
 		logs: "760836476102639651XXX", // The channel ID of logs
-		port: 8080, // Dashboard port
+		port: procces.env.PORT, // Dashboard port
 		expressSessionPassword: "556611", // Express session password (it can be what you want)
-		failureURL: "https://zoetermeermusic.herokuapp.com/" // url on which users will be redirected if they click the cancel button (discord authentication)
+		failureURL: "https://amsterdamnamm.herokuapp.com/" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
 	mongoDB: "mongodb+srv://raymond:NKgAYS0barLYTj2U@ticket.2bhyw.mongodb.net/Amsterdam?retryWrites=true&w=majority", // The URl of the mongodb database
 	prefix: "!", // The default prefix for the bot
