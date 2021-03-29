@@ -12,7 +12,7 @@ module.exports = {
 		secret: "2eVomESt4RCe2TrnNwxaVwZsPA-H4-d0", // Your discord client secret
 		baseURL: "https://amsterdamnamm.herokuapp.com/", // The base URl of the dashboard
 		logs: "760836476102639651XXX", // The channel ID of logs
-		port: procces.env.PORT, // Dashboard port
+		port: process.env.PORT, // Dashboard port
 		expressSessionPassword: "556611", // Express session password (it can be what you want)
 		failureURL: "https://amsterdamnamm.herokuapp.com/" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
