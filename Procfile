@@ -1,2 +1,2 @@
 Worker: node .
-heroku ps:scale web=1
+Web: npm start
