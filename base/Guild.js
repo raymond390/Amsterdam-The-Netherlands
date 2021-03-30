@@ -55,6 +55,7 @@ module.exports = mongoose.model("Guild", new Schema({
 		reports: false, // the channel in which the reports will be sent
 		fortniteshop: false, // the channel in which the fortnite shop image will be sent at 2.05am
 		logs: false // the channel in which the logs (message deleted, etc...) will be sent
+		
 	}},
 	slowmode: { type: Object, default: { // Servers slowmode
 		users: [],
