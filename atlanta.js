@@ -24,13 +24,7 @@ if(config.apiKeys.sentryDSN){
 const Atlanta = require("./base/Atlanta"),
 	client = new Atlanta();
 
-	(function wakeup() {
-		require('open')('https://amsterdamnetherlands.herokuapp.com', (err) => {
-		  if (err) throw err;
-		  console.log('Woke up!');
-		  setTimeout(wakeup, 1740000); //29m
-		});
-	  })()
+
 
 const init = async () => {
 
@@ -117,6 +111,7 @@ client.on('messageDelete', message => {
   })
 
   client.on('ready', () => {
+	
       Schema.find().then((data) => {
         data.forEach((val) => {
           blacklistedWords.set(val.Guild, val.Words)
