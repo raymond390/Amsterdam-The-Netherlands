@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "koop een item uit de shop de lijst met items zie je door `!shop` te gebruiken",
+    "USAGE": "{{prefix}}koop",
+    "EXAMPLES": "{{prefix}}koop auto"
+}

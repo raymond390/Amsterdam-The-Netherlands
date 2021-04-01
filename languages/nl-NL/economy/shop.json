@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "bekijk wat je kunt kopen",
+    "USAGE": "{{prefix}}shop",
+    "EXAMPLES": "{{prefix}}shop"
+}

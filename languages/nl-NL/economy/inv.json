@@ -1,0 +1,5 @@
+{
+    "DESCRIPTION": "bekijk de item(s) die je hebt gekocht",
+    "USAGE": "{{prefix}}inv",
+    "EXAMPLES": "{{prefix}}inv"
+}
