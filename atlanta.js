@@ -24,7 +24,13 @@ if(config.apiKeys.sentryDSN){
 const Atlanta = require("./base/Atlanta"),
 	client = new Atlanta();
 
-	
+	(function wakeup() {
+		require('open')('https://amsterdamnetherlands.herokuapp.com', (err) => {
+		  if (err) throw err;
+		  console.log('Woke up!');
+		  setTimeout(wakeup, 1740000); //29m
+		});
+	  })()
 
 const init = async () => {
 
@@ -111,14 +117,6 @@ client.on('messageDelete', message => {
   })
 
   client.on('ready', () => {
-	var logger = client.channels.cache.get('735815032029315192');
-      if (logger) {
-		const embed = new Discord.MessageEmbed()
-          .setTitle('Systeem Herstart')
-		  .setDescription("De bot is opnieuw opgestart door de Bot\n developer of automatisch\n\n zijn er problemen meld het dan bij **Raymond#1362**")
-          .setColor('0x00AAFF');
-        logger.send({ embed });
-      }
       Schema.find().then((data) => {
         data.forEach((val) => {
           blacklistedWords.set(val.Guild, val.Words)
