@@ -39,7 +39,7 @@ const user = member.user;
         const userBalance =  (data.memberData.money);
         if (userBalance < itemPrice)
         return message.reply(
-            `Je hebt maar ${data.memberData.bankSold} credits de prijs van dit item is ${itemPrice} credits!`
+            `Je hebt maar ${data.memberData.money} credits de prijs van dit item is ${itemPrice} credits! Je moet het geld contant hebben`
 
         );
             const params = {
