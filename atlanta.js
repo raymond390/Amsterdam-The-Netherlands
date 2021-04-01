@@ -24,7 +24,13 @@ if(config.apiKeys.sentryDSN){
 const Atlanta = require("./base/Atlanta"),
 	client = new Atlanta();
 
+	const { AwakeHeroku } = require("awake-heroku");
 
+AwakeHeroku.add("https://amsterdamnetherlands.herokuapp.com");
+AwakeHeroku.add("https://amsterdamnetherlands.herokuapp.com");
+
+// Start service
+AwakeHeroku.start();
 
 const init = async () => {
 
