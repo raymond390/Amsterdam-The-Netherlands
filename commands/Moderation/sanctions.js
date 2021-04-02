@@ -10,7 +10,7 @@ class Sanctions extends Command {
 			enabled: true,
 			guildOnly: true,
 			aliases: [ "sanctions", "see-warns", "view-warns", "see-sanctions", "view-sanctions", "infractions", "view-infractions", "see-infractions" ],
-			memberPermissions: ["MANAGE_CHANNELS"],
+			memberPermissions: ["MANAGE_MESSAGES"],
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
 			nsfw: false,
 			ownerOnly: false,
