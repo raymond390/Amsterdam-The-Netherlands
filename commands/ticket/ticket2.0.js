@@ -31,7 +31,7 @@ class ticket extends Command {
     
         message.guild.channels.cache.forEach(channel => {
     
-            if (channel.name == userName.toLowerCase() + "-" + userDiscriminator) {
+            if (channel.name == `ticket-${message.author.id}`) {
                 ticketBestaat = true;
     
                 message.reply("Je hebt al een ticket aangemaakt");
@@ -41,16 +41,9 @@ class ticket extends Command {
     
         });
     
-        if (ticketBestaat) return;
+	
     
-             const embed = new Discord.MessageEmbed()
-            .setTitle("Hoi " + message.author.username)
-            .setColor(data.config.embed.color)
-            .setFooter("support kanaal word aangemaakt ");
-
-        message.channel.send(embed);
-    
-        message.guild.channels.create(userName.toLowerCase() + "-" + userDiscriminator, { type: 'text' }).then(
+        message.guild.channels.create(`ticket-${message.author.id}`, { type: 'text' }).then(
             (createdChannel) => {
                 createdChannel.setParent(categoryID).then(
                     (settedParent) => {
@@ -70,23 +63,31 @@ class ticket extends Command {
                             VIEW_CHANNEL: true,
                             READ_MESSAGE_HISTORY: true
                         });
-    
-                        var embedParent = new Discord.MessageEmbed()
-                            .setTitle(`Hoi ${message.author.username}`)
-                            .setDescription(`Zet hier je bericht / vraag\nOpmerking: **${opmerking}**`)
-                            .setColor(data.config.embed.color)
-                            .setFooter(data.config.embed.footer);
+						if (ticketBestaat) return;
+						var eng = new Discord.MessageEmbed()
+					
+						.setDescription(`Je hebt succes vol een ticket gemaakt! klik op ${settedParent} om je ticket te zien.`)
+						message.channel.send(eng)
+					
+       
+						var embedParent = new Discord.MessageEmbed()
+					
+						.setDescription(`Hoi ${message.author}, Welkom in je ticket! Heb even gedult, We zullen binnenkort komen. Wil je de ticket sluiten gebruik \`,close\``)
+						
 
-                        settedParent.send(embedParent);
+					settedParent.send(embedParent);
+					
+		
     
-                    }
-                ).catch(err => {
-                    message.channel.send("Er is iets misgelopen");
-                });
-            }
-        ).catch(err => {
-            message.channel.send("Er is iets misgelopen");
-        });
+
+			const logchannel = message.guild.channels.cache.find(channel => channel.name === `bot-setup`)
+			if(logchannel) {
+				logchannel.send(`Ticket ${message.author.id} gemaakt. Klik hier om te kijken <#${settedParent}>`);
+			}
+                    })
+				}
+			
+        );
     
     }
 
