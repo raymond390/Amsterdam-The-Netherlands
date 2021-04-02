@@ -45,7 +45,7 @@ const level = parseInt(data.memberData.level);
             .setRank(1, 'RANK', false)
             .setUsername(message.author.username)
             .setDiscriminator(message.author.discriminator)
-
+            .setBackground('IMAGE', "https://cdn.discordapp.com/attachments/791380786837192714/821278801992089660/Screenshot_20201231-214943_Discord.jpg")
             rank.build().then(data => {
                 const attachment = new Discord.MessageAttachment(data, "amsterdam.png")
                 message.channel.send(attachment);
