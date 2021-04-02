@@ -63,7 +63,7 @@ class ticket extends Command {
                             VIEW_CHANNEL: true,
                             READ_MESSAGE_HISTORY: true
                         });
-					
+						if (ticketBestaat) return;
 						var eng = new Discord.MessageEmbed()
 					
 						.setDescription(`Je hebt succes vol een ticket gemaakt! klik op ${settedParent} om je ticket te zien.`)
@@ -77,7 +77,15 @@ class ticket extends Command {
 
 					settedParent.send(embedParent);
 					
-		
+					
+				}
+                ).catch(err => {
+                    message.channel.send("Er is iets misgelopen");
+                });
+            }
+        ).catch(err => {
+            message.channel.send("Er is iets misgelopen");
+        
     
 
 			const logchannel = message.guild.channels.cache.find(channel => channel.name === `bot-setup`)
@@ -87,11 +95,11 @@ class ticket extends Command {
                     })
 				}
 			
-        );
+        ;
     
     }
 
 
-}
+
 
 module.exports = ticket;
