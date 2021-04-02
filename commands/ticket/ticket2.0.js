@@ -41,7 +41,7 @@ class ticket extends Command {
     
         });
     
-	
+		if (ticketBestaat) return;
     
         message.guild.channels.create(`ticket-${message.author.id}`, { type: 'text' }).then(
             (createdChannel) => {
@@ -63,7 +63,7 @@ class ticket extends Command {
                             VIEW_CHANNEL: true,
                             READ_MESSAGE_HISTORY: true
                         });
-						if (ticketBestaat) return;
+					
 						var eng = new Discord.MessageEmbed()
 					
 						.setDescription(`Je hebt succes vol een ticket gemaakt! klik op ${settedParent} om je ticket te zien.`)
