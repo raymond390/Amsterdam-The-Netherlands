@@ -20,7 +20,7 @@ class vc_lock extends Command {
 
 	async run (message, args, data) {
         
-  
+		if (message.member.roles.cache.some(role => role.name === 'Server Booster')) {
     
         const channelsend = new Discord.MessageEmbed()
       .setColor('#e64b0e')
@@ -54,6 +54,6 @@ class vc_lock extends Command {
     }
 }
 
-    
+}
 
 module.exports = vc_lock;

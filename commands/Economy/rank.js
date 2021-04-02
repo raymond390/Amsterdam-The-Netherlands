@@ -1,11 +1,11 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js");
 
-class rank extends Command {
+class level extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "rank",
+			name: "level",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: true,
@@ -42,6 +42,7 @@ const level = parseInt(data.memberData.level);
             .setRequiredXP(nextLevelXP)
             .setStatus(message.author.presence.status)
             .setProgressBar("#FFA500", 'COLOR' )
+            .setRank(1, 'RANK', false)
             .setUsername(message.author.username)
             .setDiscriminator(message.author.discriminator)
 
@@ -58,4 +59,4 @@ const level = parseInt(data.memberData.level);
     }
 }
 
-module.exports = rank; 
+module.exports = level; 

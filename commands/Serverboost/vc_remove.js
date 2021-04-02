@@ -1,11 +1,11 @@
 const Command = require("../../base/Command.js"),
 	Discord = require("discord.js");
 
-class vc_add extends Command {
+class vc_remove extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "vc_add",
+			name: "vc_remove",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: false,
@@ -19,11 +19,11 @@ class vc_add extends Command {
 	}
 
 	async run (message, args, data) {
-
+        if (message.member.roles.cache.some(role => role.name === 'Server Booster')) {
         var member =  await this.client.resolveMember(args[0], message.guild);
 
         const channelsend = new Discord.MessageEmbed()
-        .setTitle(`${member} is toegevoegd aan het kanaal`)
+        .setTitle(`${member} is verwijdert uit het kanaal`)
         .setColor(data.config.embed.color)
   
         var userDiscriminator = message.author.discriminator;
@@ -34,9 +34,9 @@ class vc_add extends Command {
        
       
         fetchedChannel.updateOverwrite(member, {
-            SPEAK: true,
-            VIEW_CHANNEL: true,
-            CONNECT: true
+            SPEAK: false,
+            VIEW_CHANNEL: false,
+            CONNECT: false
         });
         
   
@@ -47,7 +47,7 @@ class vc_add extends Command {
   
       }
 
-
+    }
 
     }
-        module.exports = vc_add;
+        module.exports = vc_remove;
