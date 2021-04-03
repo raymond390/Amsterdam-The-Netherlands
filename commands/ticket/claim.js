@@ -22,7 +22,7 @@ class claim extends Command {
 		
         const ticket1 = "825265915032633374";
      
-        const ticket2 = "773115115615944705";
+        const ticket2 = "825265915032633374";
    
            const categoryID = ticket1;
    
