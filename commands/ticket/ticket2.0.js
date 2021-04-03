@@ -24,7 +24,7 @@ class ticket extends Command {
 
         const categoryID = "825265915032633374";
 		const staff = (message.member.roles.cache.some(role => role.name === 'Support Team'));
-		
+
         var userName = message.author.username;
         var userDiscriminator = message.author.discriminator;
     
@@ -65,10 +65,8 @@ class ticket extends Command {
                             READ_MESSAGE_HISTORY: true
                         });
 						if (ticketBestaat) return;
-						var eng = new Discord.MessageEmbed()
-					
-						.setDescription(`Je hebt succes vol een ticket gemaakt! klik op ${settedParent} om je ticket te zien.`)
-						message.channel.send(eng)
+						
+						message.channel.send(`Je hebt succes vol een ticket gemaakt! klik op ${settedParent} om je ticket te zien.`)
 					
        
 						
