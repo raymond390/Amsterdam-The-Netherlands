@@ -151,12 +151,7 @@ client.on('message', async(message) => {
  
 	const member = message.author
 
-	client.on('message', (message) => { //whenever a message is sent
-		if (message.content.includes('https://'||'.com')) { //if it contains an invite link
-		  message.delete() //delete the message
-			
-		}
-	  })
+	
 })
 // if there are errors, log them
 client.on("disconnect", () => client.logger.log("Bot is disconnecting...", "warn"))
