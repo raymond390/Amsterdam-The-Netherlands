@@ -71,6 +71,9 @@ const { MessageEmbed } = require('discord.js');
 		else {
 			return message.reply('Je kan dit command niet hier gebruiken. Gebruik dit waneer je een ticket wil sluiten.');
 		}
+		if(message.channel.name.includes('ticket-')) {
+			message.channel.delete();
+		}
 	}
 };
 
