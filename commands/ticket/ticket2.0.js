@@ -23,7 +23,8 @@ class ticket extends Command {
         var opmerking = args.slice(0).join(" ");
 
         const categoryID = "825265915032633374";
-
+		const staff = (message.member.roles.cache.some(role => role.name === 'Support Team'));
+		
         var userName = message.author.username;
         var userDiscriminator = message.author.discriminator;
     
@@ -70,12 +71,10 @@ class ticket extends Command {
 						message.channel.send(eng)
 					
        
-						var embedParent = new Discord.MessageEmbed()
-					
-						.setDescription(`Hoi ${message.author}, Welkom in je ticket! Heb even gedult, We zullen binnenkort komen. Wil je de ticket sluiten gebruik \`,close\``)
+						
 						
 
-					settedParent.send(embedParent);
+					settedParent.send(`${staff}\n Hoi ${message.author}, Welkom in je ticket! Heb even gedult, We zullen binnenkort komen. Wil je de ticket sluiten gebruik \`,close\``);
 					
 					
 				}
