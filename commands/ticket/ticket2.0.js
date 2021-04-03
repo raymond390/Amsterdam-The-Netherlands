@@ -72,7 +72,7 @@ class ticket extends Command {
 						
 						
 
-					settedParent.send(`${staff}\n Hoi ${message.author}, Welkom in je ticket! Heb even gedult, We zullen binnenkort komen. Wil je de ticket sluiten gebruik \`,close\``);
+					settedParent.send(`<@here>\n Hoi ${message.author}, Welkom in je ticket! Heb even gedult, We zullen binnenkort komen. Wil je de ticket sluiten gebruik \`,close\``);
 					
 					
 				}
