@@ -5,11 +5,11 @@ class groep extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "groep",
+			name: "groepen",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: false,
-			aliases: [ "group" ],
+			aliases: [ "groups","groep","group" ],
 			memberPermissions: [],
 			botPermissions: [ "SEND_MESSAGES" ],
 			nsfw: false,
