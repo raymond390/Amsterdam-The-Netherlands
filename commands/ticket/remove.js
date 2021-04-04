@@ -11,7 +11,7 @@ class remove extends Command {
 			enabled: true,
 			guildOnly: false,
 			aliases: [],
-			memberPermissions: ["MANAGE_CHANNELS"],
+			memberPermissions: ["MANAGE_MESSAGES"],
 			botPermissions: [ "SEND_MESSAGES" ],
 			nsfw: false,
 			ownerOnly: false,
