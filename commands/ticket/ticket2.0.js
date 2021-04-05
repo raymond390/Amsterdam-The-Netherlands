@@ -22,7 +22,7 @@ class ticket extends Command {
 		
         var opmerking = args.slice(0).join(" ");
 
-        const categoryID = "773115115615944705";
+        const categoryID = "828587248903389195";
 		const staff = (message.member.roles.cache.some(role => role.name === 'Support Team'));
 
         var userName = message.author.username;
