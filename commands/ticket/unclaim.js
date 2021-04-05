@@ -20,9 +20,9 @@ class claim extends Command {
 
 	async run (message, args, data) {
 		
-		const ticket1 = "825265915032633374";
-     
-        const ticket2 = "773115115615944705";
+			const ticket3 = "828587248903389195"
+   
+           const categoryID = "825265915032633374",ticket3;
    
            const categoryID = ticket1;
 
