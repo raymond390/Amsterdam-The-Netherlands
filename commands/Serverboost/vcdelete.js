@@ -24,7 +24,7 @@ class vc_delete extends Command {
           
         var opmerking = args.slice(0).join(" ");
 
-        const categoryID = "821445670082576456";
+        const categoryID = "829325962583736321";
 
         var userName = message.author.username;
         var userDiscriminator = message.author.discriminator;
