@@ -39,7 +39,7 @@ class mywarns extends Command {
 				embed.addField(s.type+" | #"+s.case, `${message.translate("common:MODERATOR")}: <@${s.moderator}>\n${message.translate("common:REASON")}: ${s.reason}`, true);
 			});
 		}
-
+        message.channel.send("Bericht word in u dm gestuurd")
 		message.author.send(embed);
 	}
 
