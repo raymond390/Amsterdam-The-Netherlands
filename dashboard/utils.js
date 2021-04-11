@@ -39,6 +39,7 @@ async function fetchUser(userData, client, query){
 	const user = await client.users.fetch(userData.id);
 	const userDb = await client.findOrCreateUser({ id: user.id }, true);
 	const userInfos = { ...user.toJSON(), ...userDb, ...userData, ...user.presence };
+	const memberData = await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id });
 	return userInfos;
 }
 

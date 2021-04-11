@@ -4,7 +4,7 @@
         "nativeName": "English",
         "moment": "en",
         "defaultMomentFormat": "MMMM Do YYYY",
-        "default": true,
+        "default": false,
         "aliases": [
             "English",
             "en",
@@ -56,7 +56,7 @@
         "nativeName": "Nederlands",
         "defaultMomentFormat": "Do MMMM YYYY",
         "moment": "nl",
-        "default": false,
+        "default": true,
         "aliases": [
             "Dutch",
             "nl",
