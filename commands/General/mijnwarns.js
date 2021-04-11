@@ -5,11 +5,11 @@ class mywarns extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "mywarns",
+			name: "mijnwarns",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: true,
-			aliases: [],
+			aliases: ["mywarns"],
 			memberPermissions: [],
 			botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
 			nsfw: false,
@@ -33,14 +33,14 @@ class mywarns extends Command {
 			embed.setDescription(message.translate("moderation/sanctions:NO_SANCTION", {
 				username: user.tag
 			}));
-			return message.channel.send(embed);
+			return message.author.send(embed);
 		} else {
 			memberData.sanctions.forEach((s) => {
 				embed.addField(s.type+" | #"+s.case, `${message.translate("common:MODERATOR")}: <@${s.moderator}>\n${message.translate("common:REASON")}: ${s.reason}`, true);
 			});
 		}
 
-		message.channel.send(embed);
+		message.author.send(embed);
 	}
 
 }
