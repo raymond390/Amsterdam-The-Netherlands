@@ -46,12 +46,12 @@
                                                     <input name="bio" class="form-control" placeholder="<%= user.bio || translate("economy/profile:NO_BIO") %>">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label><%= TEST %></label>
+                                                    <label><%= translate("economy/profile:BIRTHDATE") %></label>
                                                     <div class="input-group date">
                                                         <div class="input-group-addon">
                                                         <i class="fa fa-calendar"></i>
                                                         </div>
-                                                        <input type="text" name="warns" class="form-control pull-right" id="datepicker" placeholder="<%= memberData.sanctions.reason %>">
+                                                        <input type="text" name="birthdate" class="form-control pull-right" id="datepicker" placeholder="<%= memberData.sanctions.reason || translate("moderation/sanctions:NO_SANCTION) %>">
                                                     </div>
                                                     <!-- /.input group -->
                                                 </div>
