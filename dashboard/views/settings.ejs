@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+    memberData = await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id });
     <%- include('includes/head') %>
     
     <!-- bootstrap datepicker -->
@@ -52,7 +52,7 @@
                                                         <i class="fa fa-calendar"></i>
                                                         </div>
                                                         <input type="text" name="birthdate" class="form-control pull-right" id="datepicker" placeholder="<%= memberdata.sanctions.reason %>">
-                                                    </div>z
+                                                    </div>
                                                     <!-- /.input group -->
                                                 </div>
                                                 <!-- /.form group -->
