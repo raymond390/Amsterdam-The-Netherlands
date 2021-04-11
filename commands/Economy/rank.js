@@ -50,7 +50,7 @@ const level = parseInt(data.memberData.level);
                 const attachment = new Discord.MessageAttachment(data, "amsterdam.png")
                 message.channel.send(attachment);
             })
-        }
+        } else message.channel.send("Je moet level 1 of hoger zijn")
         
  
 
