@@ -127,6 +127,12 @@
                                                 <% } %>
                                             </select>
                                         </div>
+                                        <% } else { %>
+                                            <option selected="selected"><%= translate("common:NO_CHANNEL")%></option>
+                                            <% guild.channels.cache.filter((ch) => ch.type === "text").forEach((ch) => { %>
+                                                <option>#<%= ch.name %></option>
+                                            <% }); %>
+                                        <% } %>
                                         <div class="form-group">
                                             <label><%= translate("common:MODLOGS") %></label>
                                             <select class="form-control" name="modlogs">
