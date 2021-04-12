@@ -166,18 +166,6 @@
                                                     <% }); %>
                                                 <% } %>
                                             </select>
-                                            <select class="form-control" name="channel">
-                                                <% if(guild.plugins.training.enabled && bot.channels.cache.has(guild.plugins.training.channel)){ %>
-                                                    <option selected="selected">#<%= bot.channels.cache.get(guild.plugins.training.channel).name %></option>
-                                                    <% guild.channels.cache.filter((ch) => ch.id !== guild.plugins.training.channel && ch.type === "text").forEach((ch) => { %>
-                                                        <option>#<%= ch.name %></option>
-                                                    <% }); } else { %>
-                                                    <option selected="selected">#<%= guild.channels.cache.filter((ch) => ch.type === "text").first().name %></option>
-                                                    <% guild.channels.cache.filter((ch) => ch.id !== guild.channels.cache.first().id && ch.type === "text").forEach((ch) => { %>
-                                                        <option>#<%= ch.name %></option>
-                                                    <% }); %>
-                                                <% } %>
-                                            </select>
                                         </div>
                                         <!-- select -->
                                         <div class="form-group">
