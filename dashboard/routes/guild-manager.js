@@ -134,9 +134,9 @@ router.post("/:serverID", CheckAuth, async(req, res) => {
 			guildData.plugins.modlogs = guild.channels.cache.find((ch) => "#"+ch.name === data.modlogs).id;
 		}
 		if(data.fortniteshop === req.translate("common:NO_CHANNEL")){
-			guildData.plugins.fortniteshop = false;
+			guildData.plugins.training = false;
 		} else {
-			guildData.plugins.fortniteshop = guild.channels.cache.find((ch) => "#"+ch.name === data.fortniteshop).id;
+			guildData.plugins.training = guild.channels.cache.find((ch) => "#"+ch.name === data.training).id;
 		}
 		guildData.markModified("plugins");
 	}
