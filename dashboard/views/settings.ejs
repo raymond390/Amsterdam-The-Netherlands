@@ -35,9 +35,6 @@
                                 <div class="box-header with-border">
                                     <h3 class="box-title"><%= translate("economy/profile:YOUR_PROFILE") %></h3>
                                 </div>
-                                <div class="box-header with-border">
-                                    <h3 class="box-title"><%= data.memberData.level %></h3>
-                                </div>
                                 <!-- /.box-header -->
                                 <!-- form start -->
                                 <form role="form" action="/settings" method="POST">
@@ -54,7 +51,7 @@
                                                         <div class="input-group-addon">
                                                         <i class="fa fa-calendar"></i>
                                                         </div>
-                                                        <input type="text" name="birthdate" class="form-control pull-right" id="datepicker" placeholder="<%= printDate(new Date(user.birthdate)) %>">
+                                                        <input type="text" name="birthdate" class="form-control pull-right" id="datepicker" placeholder="<%= printDate(new Date(memberData.level)) %>">
                                                     </div>
                                                     <!-- /.input group -->
                                                 </div>
