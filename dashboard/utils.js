@@ -37,22 +37,27 @@ async function fetchUser(userData, client, query){
 		}
 		this.membersData = require("../base/Member");
 
-		let memberData = (isLean ? await this.membersData.findOne({ guildID, id: memberID }).lean() : await this.membersData.findOne({ guildID, id: memberID }));
-		if(memberData){
-			if(!isLean) this.databaseCache.members.set(`${memberID}${guildID}`, memberData);
-			return memberData;
-		} else {
-			memberData = new this.membersData({ id: memberID, guildID: guildID });
-			await memberData.save();
-			const guild = await this.findOrCreateGuild({ id: guildID });
-			if(guild){
-				guild.members.push(memberData._id);
-				await guild.save();
+		 
+			if(this.databaseCache.members.get(`${memberID}${guildID}`)){
+				return isLean ? this.databaseCache.members.get(`${memberID}${guildID}`).toJSON() : this.databaseCache.members.get(`${memberID}${guildID}`);
+			} else {
+				let memberData = (isLean ? await this.membersData.findOne({ guildID, id: memberID }).lean() : await this.membersData.findOne({ guildID, id: memberID }));
+				if(memberData){
+					if(!isLean) this.databaseCache.members.set(`${memberID}${guildID}`, memberData);
+					return memberData;
+				} else {
+					memberData = new this.membersData({ id: memberID, guildID: guildID });
+					await memberData.save();
+					const guild = await this.findOrCreateGuild({ id: guildID });
+					if(guild){
+						guild.members.push(memberData._id);
+						await guild.save();
+					}
+					this.databaseCache.members.set(`${memberID}${guildID}`, memberData);
+					return isLean ? memberData.toJSON() : memberData;
+				}
 			}
-			this.databaseCache.members.set(`${memberID}${guildID}`, memberData);
-			return isLean ? memberData.toJSON() : memberData;
-		}	
-	}
+		}
 	const user = await client.users.fetch(userData.id);
 	const userDb = await client.findOrCreateUser({ id: user.id }, true);
 	const userInfos = { ...user.toJSON(), ...userDb, ...userData, ...user.presence };
