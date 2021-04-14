@@ -16,6 +16,7 @@ async function fetchGuild(guildID, client, guilds, data){
  * Fetch user informations (stats, guilds, etc...)
  * @param {object} userData The oauth2 user informations
  * @param {object} client The discord client instance
+ * @param {object} data
  * @param {string} query The optional query for guilds
  * @returns {object} The user informations
  */
