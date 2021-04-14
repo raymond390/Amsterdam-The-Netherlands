@@ -19,7 +19,7 @@ async function fetchGuild(guildID, client, guilds){
  * @param {string} query The optional query for guilds
  * @returns {object} The user informations
  */
-async function fetchUser(userData, client, query){
+async function fetchUser(userData, client, query, data){
 	if(userData.guilds){
 		userData.guilds.forEach((guild) => {
 			const perms = new Discord.Permissions(guild.permissions);
@@ -35,9 +35,9 @@ async function fetchUser(userData, client, query){
 		if(userData.displayedGuilds.length < 1){
 			delete userData.displayedGuilds;
 		}
-		membersData = require("../base/Member");
+		membersData = data.memberData.level
 
-	
+	    
 			
 		
 	const user = await client.users.fetch(userData.id);
