@@ -4,10 +4,9 @@ const Discord = require("discord.js");
  * Fetch guild informations
  * @param {string} guildID The ID of the guild to fetch
  * @param {object} client The discord client instance
- * @param {array} data The discord client instance
  * @param {array} guilds The user guilds
  */
-async function fetchGuild(guildID, client, guilds, data){
+async function fetchGuild(guildID, client, guilds){
 	const guild = client.guilds.cache.get(guildID);
 	const conf = await client.findOrCreateGuild({id:guild.id});
 	return { ...guild, ...conf.toJSON(), ...guilds.find((g) => g.id === guild.id) };
@@ -17,11 +16,10 @@ async function fetchGuild(guildID, client, guilds, data){
  * Fetch user informations (stats, guilds, etc...)
  * @param {object} userData The oauth2 user informations
  * @param {object} client The discord client instance
- *  @param {object} data The discord client instance
  * @param {string} query The optional query for guilds
  * @returns {object} The user informations
  */
-async function fetchUser(userData, client, query, data){
+async function fetchUser(userData, client, query){
 	if(userData.guilds){
 		userData.guilds.forEach((guild) => {
 			const perms = new Discord.Permissions(guild.permissions);
@@ -37,23 +35,12 @@ async function fetchUser(userData, client, query, data){
 		if(userData.displayedGuilds.length < 1){
 			delete userData.displayedGuilds;
 		}
-
-	
-		
-		 
-		
+	}
 	const user = await client.users.fetch(userData.id);
 	const userDb = await client.findOrCreateUser({ id: user.id }, true);
 	const userInfos = { ...user.toJSON(), ...userDb, ...userData, ...user.presence };
+	const memberData = await client.findOrCreateMember({ id: user.id });
 	return userInfos;
-
-
-}
-			memberData = require("../base/Member");
-
-			 const memberData = (message.author === user) ? data.memberData : await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id }); 
-	
- return memberData;
 }
 
 module.exports = { fetchUser, fetchGuild };
