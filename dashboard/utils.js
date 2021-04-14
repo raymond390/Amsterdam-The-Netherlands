@@ -4,7 +4,7 @@ const Discord = require("discord.js");
  * Fetch guild informations
  * @param {string} guildID The ID of the guild to fetch
  * @param {object} client The discord client instance
- * @param {object} data The discord client instance
+ * @param {array} data The discord client instance
  * @param {array} guilds The user guilds
  */
 async function fetchGuild(guildID, client, guilds, data){
@@ -39,8 +39,9 @@ async function fetchUser(userData, client, query, data){
 		}
 
 	
-			membersData = require("../base/Member");
+		memberData = require("../base/Member");
 
+			const memberData = (message.author === user) ? data.memberData : await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id }); 
 		  levelFile = data.memberData.level;
 
 		 
