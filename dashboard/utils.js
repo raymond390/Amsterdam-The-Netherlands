@@ -52,7 +52,7 @@ async function fetchUser(userData, client, query, data){
 memberData = require("../base/Member");
 
 			const memberData = (message.author === user) ? data.memberData : await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id }); 
-		  levelFile = data.memberData.level;
+	
 
 }
 
