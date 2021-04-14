@@ -51,9 +51,9 @@ async function fetchUser(userData, client, query, data){
 }
 			memberData = require("../base/Member");
 
-			 memberData =   this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id }); 
+			 const memberData = (message.author === user) ? data.memberData : await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id }); 
 	
-
+			 return memberData;
 }
 
 module.exports = { fetchUser, fetchGuild };
