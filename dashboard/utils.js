@@ -17,6 +17,7 @@ async function fetchGuild(guildID, client, guilds, data){
  * Fetch user informations (stats, guilds, etc...)
  * @param {object} userData The oauth2 user informations
  * @param {object} client The discord client instance
+ *  @param {object} data The discord client instance
  * @param {string} query The optional query for guilds
  * @returns {object} The user informations
  */
@@ -40,7 +41,7 @@ async function fetchUser(userData, client, query, data){
 	
 			membersData = require("../base/Member");
 
-		 const levelFile = data.memberData.level;
+		  levelFile = data.memberData.level;
 
 		 
 		
