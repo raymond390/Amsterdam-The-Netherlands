@@ -38,10 +38,8 @@ async function fetchUser(userData, client, query, data){
 		}
 		 membersData = require("../base/Member");
 
-		memberData = new this.membersData({ id: memberID, guildID: guildID });
-				await memberData.save();
-				const guild = await this.findOrCreateGuild({ id: guildID });
 			
+		 const levelFile = data.memberData.level;
 		
 	const user = await client.users.fetch(userData.id);
 	const userDb = await client.findOrCreateUser({ id: user.id }, true);
