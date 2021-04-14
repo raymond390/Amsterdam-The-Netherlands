@@ -51,7 +51,7 @@ async function fetchUser(userData, client, query, data){
 }
 			memberData = require("../base/Member");
 
-			 memberData = (message.author === user) ? data.memberData : await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id }); 
+			 memberData =  client.users ? data.memberData : await this.client.findOrCreateMember({ id: user.id, guildID: message.guild.id }); 
 	
 
 }
