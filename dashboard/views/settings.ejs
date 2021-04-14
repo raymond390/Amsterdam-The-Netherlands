@@ -49,8 +49,9 @@
                                                     <label><%= translate("economy/profile:BIRTHDATE") %></label>
                                                     <div class="input-group date">
                                                         <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
                                                         </div>
-                                                        <input type="text" name="level" class="form-control pull-right"  placeholder="<%= user.birthdate %>">
+                                                        <input type="text" name="birthdate" class="form-control pull-right" id="datepicker" placeholder="<%= printDate(new Date(user.birthdate)) %>">
                                                     </div>
                                                     <!-- /.input group -->
                                                 </div>
