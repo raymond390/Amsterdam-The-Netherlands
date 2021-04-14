@@ -6,7 +6,7 @@ const Discord = require("discord.js");
  * @param {object} client The discord client instance
  * @param {array} guilds The user guilds
  */
-async function fetchGuild(guildID, client, guilds){
+async function fetchGuild(guildID, client, guilds, data){
 	const guild = client.guilds.cache.get(guildID);
 	const conf = await client.findOrCreateGuild({id:guild.id});
 	return { ...guild, ...conf.toJSON(), ...guilds.find((g) => g.id === guild.id) };
@@ -35,9 +35,11 @@ async function fetchUser(userData, client, query, data){
 		if(userData.displayedGuilds.length < 1){
 			delete userData.displayedGuilds;
 		}
-		const membersData = require("../base/Member");
+		 membersData = require("../base/Member");
 
-	     membersData = data.memberData.level;
+		memberData = new this.membersData({ id: memberID, guildID: guildID });
+				await memberData.save();
+				const guild = await this.findOrCreateGuild({ id: guildID });
 			
 		
 	const user = await client.users.fetch(userData.id);
