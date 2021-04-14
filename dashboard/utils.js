@@ -35,9 +35,9 @@ async function fetchUser(userData, client, query, data){
 		if(userData.displayedGuilds.length < 1){
 			delete userData.displayedGuilds;
 		}
-		membersData = data.memberData.level
+		const membersData = require("../base/Member");
 
-	    
+	     membersData = data.memberData.level;
 			
 		
 	const user = await client.users.fetch(userData.id);
