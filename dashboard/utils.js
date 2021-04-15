@@ -42,5 +42,17 @@ async function fetchUser(userData, client, query){
 	const memberData = await client.findOrCreateMember({ id: user.id });
 	return userInfos;
 }
+async function fetchUser(memberData, client, query){
+if(userData.guilds){
+	
+
+}
+const memberData = await client.users.fetch(members.id);
+const memberDB = await client.findOrCreateUser({ id: member.id }, true);
+const memberinfo = { ...user.toJSON(), ...memberDB, ...userData, ...user.presence };
+const memberData = await client.findOrCreateMember({ id: user.id });
+return userInfos;
+
+}
 
 module.exports = { fetchUser, fetchGuild };
