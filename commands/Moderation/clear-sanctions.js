@@ -19,7 +19,7 @@ class Clearsanctions extends Command {
 
 	async run (message, args) {
         
-		const member = await this.client.resolveMember(args[0], message.guild);
+			const member = await this.client.resolveMember(args[0], message.guild);
 		if(!member){
 			return message.error("moderation/clear-sanctions:MISSING_MEMBER");
 		}
