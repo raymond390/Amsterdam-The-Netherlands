@@ -26,7 +26,7 @@ class claim extends Command {
     
         
     
-        if (message.channel.parentID == categoryID, ticket2) {
+        if (message.channel.parentID == categoryID) {
     
         const embed = new Discord.MessageEmbed()
         .setTitle('Unclaim')
