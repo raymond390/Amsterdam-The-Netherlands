@@ -53,6 +53,17 @@ class ticket extends Command {
                             SEND_MESSAGES: false,
                             VIEW_CHANNEL: false
                         });
+
+                        settedParent.updateOverwrite(message.guild.roles.cache.find(x => x.name === '@Support Team'), {
+                            READ_MESSAGES: true,
+                            SEND_MESSAGES: true,
+                            ATTACH_FILES: true,
+                            CONNECT: true,
+                            ADD_REACTIONS: true,
+                            VIEW_CHANNEL: true,
+                            READ_MESSAGE_HISTORY: true,
+                            MANAGE_MESSAGES: true
+                        });
     
                         settedParent.updateOverwrite(message.author.id, {
                             CREATE_INSTANT_INVITE: false,

@@ -20,11 +20,7 @@ class claim extends Command {
 
 	async run (message, args, data) {
 		
-			const ticket3 = "828587248903389195"
-   
-           const categoryID = "825265915032633374",ticket3;
-   
-           const categoryID = ticket1;
+		const categoryID = "828587248903389195";
 
         var claim = message.guild.member(message.mentions.users.first());
     
