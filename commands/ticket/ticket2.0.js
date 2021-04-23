@@ -22,7 +22,7 @@ class ticket extends Command {
 		
         var opmerking = args.slice(0).join(" ");
 
-        const categoryID = "828587248903389195";
+        const categoryID = message.guild.channels.cache.get(data.guild.plugins.ticket);
 		const staff = (message.member.roles.cache.some(role => role.name === 'Support Team'));
 
         var userName = message.author.username;
