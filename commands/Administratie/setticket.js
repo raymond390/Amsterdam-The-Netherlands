@@ -32,7 +32,7 @@ class setticket extends Command {
 			data.guild.markModified("plugins.ticket");
 			await data.guild.save();
 			return message.success(
-				"administration/setsuggests:SUCCESS_DISABLED"
+				"ticket kanaal weg gehaald"
 			);
 		} else {
 			const channel = sentChannel || message.channel;
