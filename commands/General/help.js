@@ -122,7 +122,7 @@ class Help extends Command {
         
 		  
 		embed.addField("\u200B", message.translate("misc:STATS_FOOTER", {
-			dashboardLink: "https://amsterdamthenetherlandsrbl.herokuapp.com",
+			dashboardLink: "https://amsterdamrbl.herokuapp.com",
 			inviteLink: await this.client.generateInvite({
 				permissions: ["ADMINISTRATOR"]
 			}),
