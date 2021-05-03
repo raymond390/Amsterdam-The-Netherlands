@@ -20,7 +20,7 @@
     "MISSING_BOT_PERMS": "Ik heb de volgende rechten nodig om deze opdracht uit te voeren: {{list}}",
     "MISSING_MEMBER_PERMS": "U heeft de volgende rechten nodig om deze opdracht uit te voeren: {{list}}",
     "RESTRICTED_CHANNEL": "Opdrachten zijn niet toegestaan in {{channel}}!",
-    "EVERYONE_MENTION": "Je mag niet @everyone of @here in de opdrachten vermelden.",
+    "EVERYONE_MENTION": "Je mag niet everyone of here in de opdrachten vermelden.",
     "NSFW_COMMAND": "U moet deze opdracht uitvoeren in een kanaal dat NSFW toestaat!",
     "OWNER_ONLY": "Alleen de eigenaar van Amsterdam The Netherlands Bot kan deze opdrachten uitvoeren!",
     "COOLDOWNED": "Je moet **{{seconds}}** seconde(n) wachten om deze opdracht opnieuw te kunnen uitvoeren!",
