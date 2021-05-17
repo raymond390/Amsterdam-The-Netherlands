@@ -28,4 +28,3 @@ module.exports = [
         price: 1 
     },
 ]
-]
