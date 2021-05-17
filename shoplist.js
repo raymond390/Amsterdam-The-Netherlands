@@ -23,4 +23,9 @@ module.exports = [
         item: 'Rolex',
         price: 50000 
     },
+    {
+        item: 'Je moeder',
+        price: 1 
+    },
+]
 ]
