@@ -1,0 +1,7 @@
+{
+    "DESCRIPTION": "Zet autoplay aan of uit",
+    "USAGE": "{{prefix}}autoplay",
+    "EXAMPLES": "{{prefix}}autoplay",
+    "SUCCESS_ENABLED": "{{success}} Auto play is nu aangezet!",
+    "SUCCESS_DISABLED": "{{success}} Auto play is nu uitgezet"
+}

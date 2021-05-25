@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-	<%- include('includes/head') %>
+	<%- include includes/head %>
 	
     <body class="hold-transition skin-blue sidebar-mini">
         
         <div class="wrapper">
         
             <!-- The header is the topbar -->
-            <%- include('includes/header') %>
+            <%- include includes/header %>
 
             <!-- The sidebar includes the menu -->
-            <%- include('includes/sidebar') %>
+            <%- include includes/sidebar %>
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
@@ -29,15 +29,15 @@
 					<h2 class="headline text-yellow"> 404</h2>
 
 					<div class="error-content">
-						<h3><i class="fa fa-warning text-yellow"></i> <%= translate("dashboard:NOT_FOUND") %></h3>
+						<h3><i class="fa fa-warning text-yellow"></i> <%= language.get("ERR_NOT_FOUND") %></h3>
 
 						<p>
-							<%= translate("dashboard:NOT_FOUND_CONTENT") %>
+							<%= language.get("ERR_NOT_FOUND_CONTENT") %>
 						</p>
 
 						<form class="search-form" action="/selector">
 							<div class="input-group">
-								<input type="text" name="q" class="form-control" placeholder="<%= translate("dashboard:SEARCH") %>">
+								<input type="text" name="q" class="form-control" placeholder="<%= language.get('SEARCH_SERVERS') %>">
 
 								<div class="input-group-btn">
 									<button type="submit" class="btn btn-warning btn-flat"><i class="fa fa-search"></i>
@@ -55,7 +55,7 @@
 		</div>
 		<!-- /.content-wrapper -->
     
-   		<%- include('includes/footer') -%>
+   		<%- include includes/footer -%>
 		
 	</div>
 	<!-- ./wrapper -->
