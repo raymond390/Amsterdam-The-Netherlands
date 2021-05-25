@@ -61,7 +61,8 @@
         "pm2": "^4.5.5",
         "quick.db": "^7.1.3",
         "string-sanitizer": "^1.1.1",
-        "passport": "^0.4.0"
+        "passport": "^0.4.0",
+        "passport-discord": "^0.1.3"
     },
     "devDependencies": {
         "eslint": "^7.5.0"
