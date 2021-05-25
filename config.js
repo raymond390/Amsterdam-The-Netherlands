@@ -10,11 +10,11 @@ module.exports = {
 	dashboard: {
 		enabled: true, // whether the dashboard is enabled or not
 		secret: "bqoxN3CgvfAy0j8tXy5vvlFv5hV5T_LG", // Your discord client secret
-		baseURL: "https://amsterdamrbl.herokuapp.com", // The base URl of the dashboard
+		baseURL: "https://amsterdamthenetherlandsrbll.herokuapp.com/", // The base URl of the dashboard
 		logs: "827490679919476766", // The channel ID of logs
 		port: process.env.PORT, // Dashboard port
 		expressSessionPassword: "556611", // Express session password (it can be what you want)
-		failureURL: "https://amsterdamrbl.herokuapp.com" // url on which users will be redirected if they click the cancel button (discord authentication)
+		failureURL: "https://amsterdamthenetherlandsrbll.herokuapp.com/" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
 	mongoDB: "mongodb+srv://raymond:NKgAYS0barLYTj2U@ticket.2bhyw.mongodb.net/Amsterdam?retryWrites=true&w=majority", // The URl of the mongodb database
 	prefix: "!", // The default prefix for the bot
