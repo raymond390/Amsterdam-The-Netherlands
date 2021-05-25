@@ -48,7 +48,7 @@ module.exports.load = async(client) => {
     // Multi languages support
     .use(async function(req, res, next){
         req.client = client;
-        let userLang = req.user ? req.user.locale : "en-US";
+        let userLang = req.user ? req.user.locale : "en";
         let lang = availableLanguages.find((l) => l.startsWith(userLang)) || "english";
         let Language = require("../languages/"+lang);
         req.language = new Language();
