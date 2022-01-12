@@ -50,7 +50,7 @@ module.exports.load = async(client) => {
         req.client = client;
         let userLang = req.user ? req.user.locale : "en";
         let lang = availableLanguages.find((l) => l.startsWith(userLang)) || "english";
-        let Language = require("../languages/"+lang);
+        let Language = require("../languages/nl-NL");
         req.language = new Language();
         if(req.user && req.url !== "/"){
             req.userInfos = await utils.fetchUser(req.user, req.client, req.query.q);
