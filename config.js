@@ -16,7 +16,7 @@ module.exports = {
 		expressSessionPassword: "556611", // Express session password (it can be what you want)
 		failureURL: "https://amsterdamthenetherlandsrbll.herokuapp.com" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
-	mongoDB: "mongodb+srv://raymond:NKgAYS0barLYTj2U@ticket.2bhyw.mongodb.net/Amsterdam?retryWrites=true&w=majority", // The URl of the mongodb database
+	mongoDB: "mongodb+srv://Raymond:nNWreqrFja1I7vdO@cluster0.dolzr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", // The URl of the mongodb database
 	prefix: "!", // The default prefix for the bot
 	/* For the embeds (embeded messages) */
 	embed: {
