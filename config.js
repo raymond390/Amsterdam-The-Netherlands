@@ -1,20 +1,20 @@
 module.exports = {
 	/* The token of your Discord Bot */
-	token: "",
+
 	/* For the support server */
 	support: {
-		id: "757998148969824376", // The ID of the support server
-		logs: "827490679919476766", // And the ID of the logs channel of your server (new servers for example)
+		id: "880054035787419668", // The ID of the support server
+		logs: "880054035787419672", // And the ID of the logs channel of your server (new servers for example)
 	},
 	/* Dashboard configuration */
 	dashboard: {
 		enabled: false, // whether the dashboard is enabled or not
-		secret: "bqoxN3CgvfAy0j8tXy5vvlFv5hV5T_LG", // Your discord client secret
-		baseURL: "https://amsterdamthenetherlandsrbll.herokuapp.com", // The base URl of the dashboard
-		logs: "827490679919476766", // The channel ID of logs
+		secret: "tifU8mXFHYLVJWDLKBjyLuwkr07CA2ig", // Your discord client secret
+		baseURL: "https://dashboard.atlanta-bot.fr", // The base URl of the dashboard
+		logs: "https://discordbotdefensie.herokuapp.com", // The channel ID of logs
 		port: process.env.PORT, // Dashboard port
-		expressSessionPassword: "556611", // Express session password (it can be what you want)
-		failureURL: "https://amsterdamthenetherlandsrbll.herokuapp.com" // url on which users will be redirected if they click the cancel button (discord authentication)
+		expressSessionPassword: "5555", // Express session password (it can be what you want)
+		failureURL: "https://discordbotdefensie.herokuapp.com" // url on which users will be redirected if they click the cancel button (discord authentication)
 	},
 	mongoDB: "mongodb+srv://Raymond:nNWreqrFja1I7vdO@cluster0.dolzr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", // The URl of the mongodb database
 	prefix: "!", // The default prefix for the bot
