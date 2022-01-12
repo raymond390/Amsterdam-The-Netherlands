@@ -19,7 +19,7 @@ class vc_add extends Command {
 	}
 
 	async run (message, args, data) {
-        if (message.member.roles.cache.some(role => role.name === 'Server Booster')) {
+        if (message.member.roles.cache.some(role => role.name === 'BOT')) {
         var member =  await this.client.resolveMember(args[0], message.guild);
 
         const channelsend = new Discord.MessageEmbed()
